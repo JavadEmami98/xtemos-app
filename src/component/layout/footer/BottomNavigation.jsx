@@ -1,15 +1,15 @@
 import React, { Fragment, useEffect, useState } from "react";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Badge from "@mui/material/Badge";
-import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";
+/* import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined"; */
 import StorefrontIcon from "@mui/icons-material/Storefront";
 import { Box, Button, Drawer, Typography } from "@mui/material";
 import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import CloseIcon from "@mui/icons-material/Close";
 import RemoveShoppingCartOutlinedIcon from "@mui/icons-material/RemoveShoppingCartOutlined";
+import ShopCart from "./ShopCart";
 
 function BottomNavigation() {
-  const [open, setOpen] = React.useState(false);
   const [open2, setOpen2] = React.useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
@@ -57,58 +57,10 @@ function BottomNavigation() {
           </Badge>
           <Typography sx={{ fontSize: "11px" }}>لیست آرزوها</Typography>
         </div>
-
-        <div
-          onClick={() => handleClick("fav")}
-          style={{ color: activeItem === "fav" ? "gray" : "black" }}
-          className="flex flex-col justify-center items-center w-full"
-        >
-          <Badge badgeContent={2} color="primary">
-            <ShoppingCartOutlinedIcon sx={{ mb: "2px" }} />
-          </Badge>
-          <Fragment>
-            <Typography onClick={() => setOpen(true)} sx={{ fontSize: "10px" }}>
-              کارت
-            </Typography>
-            <Drawer anchor={"left"} open={open} onClose={() => setOpen(false)}>
-              <div className="w-[300px] ">
-                <div className="flex items-center justify-between px-[15px] py-[20px] h-[66px] text-[18px] text-[#242424] border-b">
-                  <p>کارت خرید</p>
-                  <div className="flex items-center text-[14px] text-[#333333]">
-                    <p>بستن</p>
-                    <CloseIcon
-                      sx={{ p: "2px", mr: "3px" }}
-                      onClick={() => setOpen(false)}
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col items-center justify-center mt-[20px] py-[10px] px-[15px]">
-                  <RemoveShoppingCartOutlinedIcon
-                    sx={{
-                      height: "90px",
-                      width: "130px",
-                      mb: "20px",
-                      color: "#f1f1f1",
-                    }}
-                  />
-                  <p className="text-[14px] text-[#242424] mb-[20px]">
-                    محصولی یافت نشد
-                  </p>
-                  <Button
-                    variant="contained"
-                    sx={{
-                      fontSize: "13px",
-                      backgroundColor: "#2e6bc6",
-                      height: "36px",
-                    }}
-                  >
-                    بازگشت به شاپ
-                  </Button>
-                </div>
-              </div>
-            </Drawer>
-          </Fragment>
+        <div className="w-full">
+          <ShopCart />
         </div>
+
         <div
           onClick={() => handleClick("acc")}
           style={{ color: activeItem === "acc" ? "gray" : "black" }}
@@ -169,8 +121,9 @@ function BottomNavigation() {
                         <input type="checkbox" />
                       </div>
                     </div>
-                  </form></div>
-                  <div className="flex flex-col items-center justify-center  py-[20px] px-[15px] border-b">
+                  </form>
+                </div>
+                <div className="flex flex-col items-center justify-center  py-[20px] px-[15px] border-b">
                   <RemoveShoppingCartOutlinedIcon
                     sx={{
                       height: "54px",
@@ -186,7 +139,6 @@ function BottomNavigation() {
                     <p>اکانت جدید بسازید</p>
                   </div>
                 </div>
-                
               </div>
             </Drawer>
           </Fragment>

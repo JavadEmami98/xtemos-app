@@ -15,13 +15,13 @@ import GridPics from "../component/GridPics/GridPics";
 import Footer from "../component/layout/footer/Footer";
 import BottomNavigation from "../component/layout/footer/BottomNavigation";
 import BackToTopButton from "../component/BackToTop/BackToTop";
-import Header from "../component/layout/header/Header";
+import IndexHeader from "../component/layout/header/IndexHeader";
 
 function Index() {
   return (
     <div>
       <Container maxWidth="lg">
-        <Header />
+        <IndexHeader />
       </Container>
       <Swiper1 />
       <Container maxWidth="lg">

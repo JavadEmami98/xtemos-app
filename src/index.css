@@ -230,3 +230,11 @@ code {
 .menu-bar:hover {
   display: block;
 }
+
+@layer components {
+  .container {
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 10px;
+  }
+}

@@ -51,13 +51,13 @@ function Header() {
               <p className="py-[10px] text-[#848484] hover:text-[#2e6bc6] cursor-pointer">
                 قاب آیفون
               </p>
-              <p className="py-[10px] text-[#848484]  hover:text-[#2e6bc6] cursor-pointer">
+              <p className="py-[10px] text-[#848484] hover:text-[#2e6bc6] cursor-pointer">
                 قاب آیفون
               </p>
-              <p className="py-[10px] text-[#848484]  hover:text-[#2e6bc6] cursor-pointer">
+              <p className="py-[10px] text-[#848484] hover:text-[#2e6bc6] cursor-pointer">
                 قاب آیفون
               </p>
-              <p className="py-[10px] text-[#848484]  hover:text-[#2e6bc6] cursor-pointer">
+              <p className="py-[10px] text-[#848484] hover:text-[#2e6bc6] cursor-pointer">
                 قاب آیفون
               </p>
             </div>
