@@ -187,7 +187,7 @@ code {
 
 .image-text {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
   position: absolute;
   bottom: 0;

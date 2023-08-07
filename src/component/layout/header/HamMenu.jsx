@@ -5,7 +5,6 @@ import { Box } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import TabHamMenu from "./TabHamMenu";
 
-
 const HamMenu = () => {
   const [open, setOpen] = React.useState(false);
   return (
@@ -34,9 +33,8 @@ const HamMenu = () => {
                   <SearchIcon sx={{ color: "#777" }} />
                 </div>
               </div>
-              
             </Box>
-            <TabHamMenu/>
+            <TabHamMenu />
           </Drawer>
         </Box>
       </div>
