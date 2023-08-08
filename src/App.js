@@ -5,6 +5,8 @@ import Product from './page/Product';
 import CheckOut from './page/CheckOut';
 import EmptyCheckout from './page/EmptyCheckout';
 import Cart from './page/Cart';
+import Login from './page/Login';
+import LoginPassword from './page/LoginPassword';
 
 function App() {
   return (
@@ -15,6 +17,8 @@ function App() {
       <Route path="/checkout" element={<CheckOut />} />
       <Route path="/emptycheckout" element={<EmptyCheckout />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/loginpassword" element={<LoginPassword />} />
     </Routes> 
   </BrowserRouter>
   );

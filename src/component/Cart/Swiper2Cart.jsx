@@ -6,13 +6,14 @@ function Swiper2Cart() {
     <Box
       sx={{
         cursor:"pointer",
+        background:"none",
         overflow: "hidden",
         img: {
           transition: "all ease-in 300ms",
         },
         ":hover": {
           img: {
-            transform: "scale(1.2)",
+            transform: "scale(1.1)",
             transition: "all ease-in 500ms ",
           },
         },
@@ -20,9 +21,10 @@ function Swiper2Cart() {
       className="w-full h-full"
     >
       <img
-        src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/08/wood-accessories-category-3.jpg.webp"
+        src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/08/wood-accessories-category-2.jpg.webp"
         alt=""
         loading="lazy"
+        className="bg-[red]"
       />
       <div className="p-[10px]">
         <h3 className="text-[18px] text-[#333333]">کابل</h3>

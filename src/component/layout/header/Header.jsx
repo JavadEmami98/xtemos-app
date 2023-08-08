@@ -4,6 +4,8 @@ import { Box } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Badge from "@mui/material/Badge";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
+import MultipleStopIcon from '@mui/icons-material/MultipleStop';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const menu = [
   { title: "قاب ها" },
@@ -65,28 +67,28 @@ function Header() {
         </div>
       </div>
       <div className="flex items-center">
-        <div className="flex items-center text-[14px] text-[#333333]">
-          <p>ورود / ثبت نام</p>
+          <div className="flex items-center text-[14px] text-[#333333] cursor-pointer hover:text-[#33333399]">
+            <p>ورود / ثبت نام</p>
+          </div>
+          <div className="px-[10px]">
+            <SearchOutlinedIcon  sx={{":hover":{color:"#33333399"},cursor:"pointer"}}/>
+          </div>
+          <div className="px-[10px]">
+            <Badge badgeContent={2} color="primary">
+              <FavoriteBorderIcon  sx={{":hover":{color:"#33333399"},cursor:"pointer"}} />
+            </Badge>
+          </div>
+          <div className="px-[10px]">
+            <Badge badgeContent={2} color="primary">
+              <MultipleStopIcon  sx={{":hover":{color:"#33333399"},cursor:"pointer"}} />
+            </Badge>
+          </div>
+          <div className="px-[10px]">
+            <Badge badgeContent={2} color="primary">
+              <ShoppingCartOutlinedIcon sx={{":hover":{color:"#33333399"},cursor:"pointer"}} />
+            </Badge>
+          </div>
         </div>
-        <div className="px-[10px]">
-          <SearchOutlinedIcon />
-        </div>
-        <div className="px-[10px]">
-          <Badge badgeContent={2} color="primary">
-            <FavoriteBorderIcon sx={{}} />
-          </Badge>
-        </div>
-        <div className="px-[10px]">
-          <Badge badgeContent={2} color="primary">
-            <FavoriteBorderIcon sx={{}} />
-          </Badge>
-        </div>
-        <div className="px-[10px]">
-          <Badge badgeContent={2} color="primary">
-            <FavoriteBorderIcon sx={{}} />
-          </Badge>
-        </div>
-      </div>
     </div>
   );
 }

@@ -10,7 +10,7 @@ function Swiper1Cart({title, descripttion1,descripttion2,image,paragraph}) {
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundSize: "cover",
-          height: "90vh",
+          height: "75vh",
           width: "100vw",
           display: "flex",
           alignItems: "center",

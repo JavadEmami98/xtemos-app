@@ -238,3 +238,11 @@ code {
     padding-inline: 10px;
   }
 }
+
+.MuiTabs-indicator .css-1aquho2-MuiTabs-indicator {
+  display: none;
+}
+
+.MuiButtonBase .MuiButton-root  {
+  box-shadow: none;
+}
