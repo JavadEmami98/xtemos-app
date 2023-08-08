@@ -1,6 +1,6 @@
 .swiper2 {
   width: 100%;
-  height: 207px !important;
+  height: 210px !important;
 }
 
 .swiper-slide2 {
@@ -15,13 +15,15 @@
 }
 
 .swiper-slide2 img {
-  max-width: 132px;
+  margin-top: 8px;
+  width: 100%;
+  max-width: 132px !important;
   margin-left: auto;
   margin-right: auto;
   height: 132px;
   object-fit: cover;
   border-radius: 50%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* .swiper-slide2 img:hover {

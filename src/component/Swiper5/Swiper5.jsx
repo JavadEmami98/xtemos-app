@@ -35,8 +35,11 @@ const breakpoints = {
 export default function Swiper5() {
   return (
     <>
+    <div className="lg:h-[350px] w-full mb-[80px] pt-[13px] pb-[20px]">
+
+   
     <Swiper
-      style={{paddingTop:"13px",paddingBottom:"13px",marginBottom:"80px"}}
+      style={{paddingTop:"13px",paddingBottom:"30px",}}
       breakpoints={breakpoints}
       pagination={{
         clickable: true,
@@ -51,6 +54,7 @@ export default function Swiper5() {
       <SwiperSlide className="swiper-slide5"><Swiper5Cart/></SwiperSlide>
       <SwiperSlide className="swiper-slide5"><Swiper5Cart/></SwiperSlide>
     </Swiper>
+     </div>
   </>
   );
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import Swiper1 from "../component/Swiper1/Swiper1";
 import Swiper2 from "../component/Swiepr2/Swiper2";
-import { Container } from "@mui/material";
 import Part1 from "../component/Part1/Part1";
 import CustomTab from "../component/Tab/Tab";
 import Part2 from "../component/Part2/Part2";
@@ -20,11 +19,11 @@ import IndexHeader from "../component/layout/header/IndexHeader";
 function Index() {
   return (
     <div>
-      <Container maxWidth="lg">
+      <div className="container">
         <IndexHeader />
-      </Container>
+      </div>
       <Swiper1 />
-      <Container maxWidth="lg">
+      <div className="container">
         <Swiper2 />
         <Part1 />
         <CustomTab />
@@ -35,7 +34,7 @@ function Index() {
         <Swiper4 />
         <Part4 />
         <Swiper5 />
-      </Container>
+      </div>
       <GridPics />
       <div className="relative">
         <Footer />

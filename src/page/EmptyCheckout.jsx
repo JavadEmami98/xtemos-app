@@ -1,15 +1,15 @@
 import React from "react";
 import IndexHeader from "../component/layout/header/IndexHeader";
-import { Box, Button, Container } from "@mui/material";
+import { Box, Button } from "@mui/material";
 import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import RemoveShoppingCartOutlinedIcon from "@mui/icons-material/RemoveShoppingCartOutlined";
 
 function EmptyCheckout() {
   return (
     <div>
-      <Container maxWidth="lg">
+      <div className="container">
         <IndexHeader />
-      </Container>
+      </div>
       {/* Banner */}
       <Box
         sx={{

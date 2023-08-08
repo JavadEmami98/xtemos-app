@@ -13,6 +13,7 @@ import { Pagination } from "swiper/modules";
 import Swiper3Cart from "../Cart/Swiper3Cart";
 
 
+
 const breakpoints = {
   "1024": {
     slidesPerView: 3,
@@ -44,15 +45,17 @@ export default function Swiper3() {
         modules={[Pagination]}
         className="./Swiper3.css"
       >
-        <SwiperSlide className="swiper-slide3">
+       
+          <SwiperSlide className="swiper-slide3">
           <Swiper3Cart />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide3">
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide3">
           <Swiper3Cart />
-        </SwiperSlide>
-        <SwiperSlide className="swiper-slide3">
+          </SwiperSlide>
+          <SwiperSlide className="swiper-slide3">
           <Swiper3Cart />
-        </SwiperSlide>
+          </SwiperSlide>
+     
       </Swiper>
     </>
   );

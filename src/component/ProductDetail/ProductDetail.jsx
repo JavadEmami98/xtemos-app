@@ -167,26 +167,7 @@ function ProductDetail() {
         {/* Left - Swiper */}
         <div className="flex w-full lg:order-2 order-1">
           <SwiperProduct />
-          <div className="lg:block px-[15px] hidden">
-            <img
-              src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/09/green-case-back-430x491.jpg.webp"
-              alt=""
-              loading="lazy"
-              className="object-cover h-[187px]"
-            />
-            <img
-              src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/09/green-case-back-430x491.jpg.webp"
-              alt=""
-              loading="lazy"
-              className="object-cover h-[187px]"
-            />
-            <img
-              src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/09/green-case-back-430x491.jpg.webp"
-              alt=""
-              loading="lazy"
-              className="object-cover h-[187px]"
-            />
-          </div>
+          
         </div>
       </div>
       <div className="border-b">

@@ -1,4 +1,4 @@
-import { Box, Button, Container, FormControl, FormControlLabel, Radio, RadioGroup, TextField } from '@mui/material'
+import { Box, Button, FormControl, FormControlLabel, Radio, RadioGroup, TextField } from '@mui/material'
 import React from 'react'
 import DropDown from '../component/DropDown/DropDrown'
 import CloseIcon from '@mui/icons-material/Close';
@@ -10,7 +10,7 @@ function CheckOut() {
         <div className='flex items-center justify-center lg:h-[90px] h-[60px]'>
             <img src="https://woodmart.xtemos.com/accessories/wp-content/themes/woodmart/images/wood-logo-dark.svg" alt="" className='py-[5px] h-[35px] object-cover' loading='lazy'/>
         </div>
-        <Container maxWidth='md'>
+        <div className="container">
         {/* section */}
         <div className=' pt-[40px] px-[15px] w-full'>
         <div className='flex justify-center text-[14px] text-[#242424] mb-[25px]'>
@@ -196,7 +196,7 @@ function CheckOut() {
           <Button variant="contained" sx={{backgroundColor:"#2e6bc6",width:"100%",height:"42px"}}>ثبت سفارش</Button>
         </div>
         </div>
-        </Container>
+        </div>
     </div>
   )
 }
