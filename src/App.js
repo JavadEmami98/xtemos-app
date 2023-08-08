@@ -3,6 +3,8 @@ import './App.css';
 import Index from './page';
 import Product from './page/Product';
 import CheckOut from './page/CheckOut';
+import EmptyCheckout from './page/EmptyCheckout';
+import Cart from './page/Cart';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Route path="/" element={<Index />} />
       <Route path="/product" element={<Product />} />
       <Route path="/checkout" element={<CheckOut />} />
+      <Route path="/emptycheckout" element={<EmptyCheckout />} />
+      <Route path="/cart" element={<Cart />} />
     </Routes> 
   </BrowserRouter>
   );
