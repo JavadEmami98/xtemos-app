@@ -110,11 +110,17 @@ function Cart() {
             </div>
             {/* cart baraye sm & xs */}
             <div className="flex mb-[35px] pb-[25px] lg:hidden md:hidden">
-              <img src="https://woodmart.xtemos.com/accessories/wp-content/uploads/sites/7/2022/09/green-case-back.jpg" alt="" className="h-[114px] object-cover"/>
+              <img
+                src="https://woodmart.xtemos.com/accessories/wp-content/uploads/sites/7/2022/09/green-case-back.jpg"
+                alt=""
+                className="h-[114px] object-cover"
+              />
               <div className="flex flex-col w-full">
                 <div className="flex justify-between  w-full">
-                  <p className="text-[14px] text-[#333333] mb-[10px]">iPhone 12 Pro Moment Case – Olive</p>
-                  <CloseIcon sx={{color:"#333333",p:"5px"}}/>
+                  <p className="text-[14px] text-[#333333] mb-[10px]">
+                    iPhone 12 Pro Moment Case – Olive
+                  </p>
+                  <CloseIcon sx={{ color: "#333333", p: "5px" }} />
                 </div>
                 <div className="flex justify-between w-full text-[14px]  mb-[10px] border-b">
                   <p className="text-[14px] text-[#777777] mb-[5px]"> قیمت</p>
@@ -160,8 +166,21 @@ function Cart() {
             </div>
             {/* input & button sm xs */}
             <div className="sm:flex xs:flex-col lg:hidden md:hidden items-center border-[#0000001b] border-[2px] border-dashed p-[25px] mb-[30px]">
-              <input type="text" placeholder="کد بزن" className="w-full h-[42px] px-[15px] border rounded-[5px] ml-[10px] xs:mb-0 sm:mb-0 mb-[10px]"/>
-              <Button variant="contained" sx={{background:"#2e6bc6",height:"42px",width:{sm:"139px",xs:"100%"}}}>اپلای کد</Button>
+              <input
+                type="text"
+                placeholder="کد بزن"
+                className="w-full h-[42px] px-[15px] border rounded-[5px] ml-[10px] xs:mb-0 sm:mb-0 mb-[10px]"
+              />
+              <Button
+                variant="contained"
+                sx={{
+                  background: "#2e6bc6",
+                  height: "42px",
+                  width: { sm: "139px", xs: "100%" },
+                }}
+              >
+                اپلای کد
+              </Button>
             </div>
           </div>
           <div className="col-span-2 bg-black">xzczczxc</div>

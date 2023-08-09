@@ -24,7 +24,7 @@ export default class LightBoxSwiper extends Component {
 
     return (
       <div>
-        <OpenWithIcon onClick={() => this.setState({ isOpen: true })} sx={{color:"#333",":hover":{color:"#777"},borderRadius:"50%",border:"1px solid #777777",p:"12px",width:"50px",height:"50px"}}/>
+        <OpenWithIcon onClick={() => this.setState({ isOpen: true })} sx={{color:"#666",":hover":{color:"#777"},borderRadius:"50%",border:"1px solid #777777",p:"12px",width:"50px",height:"50px"}}/>
         {isOpen && (
           <Lightbox
             mainSrc={images[photoIndex]}

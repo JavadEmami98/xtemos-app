@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import ExpandMoreOutlinedIcon from "@mui/icons-material/ExpandMoreOutlined";
-import { Box } from "@mui/material";
+import { Box, Drawer } from "@mui/material";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import Badge from "@mui/material/Badge";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
 import MultipleStopIcon from '@mui/icons-material/MultipleStop';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
+import CloseIcon from '@mui/icons-material/Close';
 
 const menu = [
   { title: "قاب ها" },
@@ -17,6 +18,7 @@ const menu = [
 ];
 
 const TopHeader = () => {
+  const [open2, setOpen2] = React.useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
   useEffect(() => {
@@ -92,9 +94,26 @@ const TopHeader = () => {
           <div className="flex items-center text-[14px] text-[#333333] cursor-pointer hover:text-[#33333399]">
             <p>ورود / ثبت نام</p>
           </div>
-          <div className="px-[10px]">
-            <SearchOutlinedIcon  sx={{":hover":{color:"#33333399"},cursor:"pointer"}}/>
+          <Fragment> 
+            <div className="px-[10px]">
+            <SearchOutlinedIcon    onClick={() => setOpen2(true)} sx={{":hover":{color:"#33333399"},cursor:"pointer"}}/>
           </div>
+          <Drawer
+              anchor={"bottom"}
+              open={open2}
+              onClose={() => setOpen2(false)}
+            >
+              <div className="h-[80vh]"> 
+              <div className="relative h-[110px] border-b">
+                <input type="text" placeholder="جستجو برای محصول" className="h-[110px] w-full text-center outline-none border-b lg:text-[48px] font-semibold text-[20px] text-[#333]"/>
+                <CloseIcon onClick={() => setOpen2(false)} sx={{position:"absolute",top:30,left:20,width:"50px",height:"50px",color:"#777777",cursor:"pointer"}}/>
+              </div>
+              <div className="flex justify-center w-full mt-[10px] text-[16px] text-[#777777]">
+                <span>برای دیدن محصولاتی که به دنبال آن هستید شروع به تایپ کنید.</span>
+              </div>
+              </div>
+          </Drawer>
+          </Fragment>
           <div className="px-[10px]">
             <Badge badgeContent={2} color="primary">
               <FavoriteBorderIcon  sx={{":hover":{color:"#33333399"},cursor:"pointer"}} />

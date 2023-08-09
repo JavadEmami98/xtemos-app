@@ -182,7 +182,7 @@ code {
 .image {
   display: block;
   width: 100%;
-  transition: transform 0.3s ease;
+  transition: transform 0.25s ease;
 }
 
 .image-text {
@@ -243,6 +243,25 @@ code {
   display: none;
 }
 
-.MuiButtonBase .MuiButton-root  {
-  box-shadow: none;
+.MuiButtonBase .MuiButton-root {
+  box-shadow: none !important;
+}
+
+.css-1peu7cv-MuiButtonBase-root-MuiButton-root {
+  box-shadow: none !important;
+}
+
+
+/* Icon image */
+.icon-img {
+  opacity: 0;
+  transition: opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+    visibility 0.4s cubic-bezier(0.19, 1, 0.22, 1),
+    transform 0.4s cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateY(15px) translateZ(0);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.arrow-icon-img:hover + .icon-img {
+  opacity: 1;
 }

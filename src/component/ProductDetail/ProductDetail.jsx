@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DoneIcon from "@mui/icons-material/Done";
-import { Avatar, Button, Rating, TextField } from "@mui/material";
+import { Avatar, Button, Rating, TextField, Tooltip } from "@mui/material";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import ShuffleIcon from "@mui/icons-material/Shuffle";
@@ -8,6 +8,9 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import AcUnitIcon from "@mui/icons-material/AcUnit";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SwiperProduct from "../SwiperProduct/SwiperProduct";
+import ViewCompactAltOutlinedIcon from '@mui/icons-material/ViewCompactAltOutlined';
+import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
 function ProductDetail() {
   const [showContent, setShowContent] = useState(false);
@@ -18,6 +21,34 @@ function ProductDetail() {
 
   return (
     <div>
+      <div className="flex items-center justify-between px-[15px] mb-[20px]">
+        <div className="flex items-center text-[14px] text-[#777777]">
+          <p className="ml-[6px]">خانه /</p>
+          <p className="ml-[6px]">قاب /</p>
+          <p className="ml-[6px]">آیفون /</p>
+          <p className="text-[#333333] font-semibold">
+					iPhone 12 Pro Moment Case – Olive				</p>
+        </div>
+        <div className="lg:block hidden item-center cursor-pointer relative">
+         <ArrowForwardIosOutlinedIcon className="arrow-icon-img" sx={{width:"20px",height:"20px",color:"#242424",ml:"5px",p:"3px"}}/>
+         <div className="icon-img flex items-center absolute mt-[15px] z-10 left-0 top-5 rounded-[8px] min-w-[240px] border bg-[#fff] shadow-[0 0 3px rgba(0,0,0,.15)]">
+          <img src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/09/dark-case-back-430x491.jpg.webp" alt="" loading="lazy" className="h-[103px] object-cover"/>
+          <div className="flex flex-col gap-4 justify-between py-[10px] px-[15px] h-full w-full">
+            <p className="text-[#242424]">آیفون پرو 12</p>
+            <p className="text-[#2e6bc6]">225IRR</p>
+          </div>
+           </div>
+        <ViewCompactAltOutlinedIcon sx={{width:"20px",height:"20px",color:"#242424"}}/>
+         <ArrowBackIosNewOutlinedIcon className="arrow-icon-img" sx={{width:"20px",height:"20px",color:"#242424",mr:"5px",p:"3px"}}/>
+         <div className="icon-img flex items-center absolute mt-[15px] z-10 left-0 top-5 rounded-[8px] min-w-[240px] border bg-[#fff] shadow-[0 0 3px rgba(0,0,0,.15)]">
+          <img src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/09/yellow-case-back-430x491.jpg.webp" alt="" loading="lazy" className="h-[103px] object-cover"/>
+          <div className="flex flex-col gap-4 justify-between py-[10px] px-[15px] h-full w-full">
+            <p className="text-[#242424]">آیفون پرو  زرد12</p>
+            <p className="text-[#2e6bc6]">500IRR</p>
+          </div>
+           </div>
+        </div>
+      </div>
       <div className="flex lg:flex-row flex-col  pb-[40px] border-b">
         {/* Right - Product detail */}
         <div className="flex flex-col px-[15px] ml-[5px] w-full lg:order-1 order-2">
@@ -39,31 +70,39 @@ function ProductDetail() {
           <div className="flex items-center h-[45px] text-[14px] text-[#242424] mb-[20px]">
             <p className="pl-[20px]">رنگ:</p>
             <div className="flex items-center gap-3">
-              <div className="flex items-center justify-center w-[45px] h-[45px]  border rounded-[8px]">
+              <Tooltip 
+               title="مشکی"
+              placement="top"
+               sx={{ fontSize: "12px", color: "#242424 !important"}}
+               arrow
+               >
+              <div className="flex items-center justify-center w-[45px] h-[45px]  border rounded-[8px] cursor-pointer">
                 <img
                   src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/08/w-accessories-product-link-1-1.jpg.webp"
                   alt=""
                   className="object-cover h-[37px] w-[37px]"
                 />
               </div>
-              <div className="flex items-center justify-center w-[45px] h-[45px]  border rounded-[8px]">
+              </Tooltip>
+              <Tooltip 
+               title="زرد"
+              placement="top"
+               sx={{ fontSize: "12px", color: "#242424 !important"}}
+               arrow
+               >
+              <div className="flex items-center justify-center w-[45px] h-[45px]  border rounded-[8px] cursor-pointer">
                 <img
-                  src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/08/w-accessories-product-link-1-1.jpg.webp"
+                  src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/09/yellow-case-back.jpg.webp"
                   alt=""
                   className="object-cover h-[37px] w-[37px]"
                 />
               </div>
-              <div className="flex items-center justify-center w-[45px] h-[45px]  border rounded-[8px]">
-                <img
-                  src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/08/w-accessories-product-link-1-1.jpg.webp"
-                  alt=""
-                  className="object-cover h-[37px] w-[37px]"
-                />
-              </div>
+              </Tooltip>
+             
             </div>
           </div>
           <div className="flex items-center text-[14px] text-[#333333] mb-[20px]">
-            <DoneIcon sx={{ ml: "5px", pb: "2px" }} />
+            <DoneIcon sx={{ ml: "5px", pb: "2px",color:"#2e6bc6" }} />
             <p>5 عدد موجود</p>
           </div>
           <div className="flex items-center justify-between h-[42px] text-[12px] mb-[20px]">
@@ -77,7 +116,7 @@ function ProductDetail() {
                   name=""
                   id=""
                   placeholder="1"
-                  className="w-[30px] h-full pr-[15px] border"
+                  className="w-[30px] h-full border text-center"
                 />
                 <div className="flex items-center justify-center px-[7px]  h-full ">
                   <p>+</p>
@@ -109,16 +148,21 @@ function ProductDetail() {
           <div className="flex items-center justify-between flex-wrap mb-[20px]  pb-[12px] border-b lg:gap-0 gap-3">
             <div className="flex items-center px-[15px] text-[14px] text-[#333333] gap-2">
               <p className="ml-[5px]">اشتراک:</p>
-              <FacebookIcon />
-              <TelegramIcon />
-              <FacebookIcon />
-              <FacebookIcon />
+              <FacebookIcon sx={{width:"20px",height:"20px",color:"#00000099",cursor:"pointer",":hover":{color:"#242424"}}}/>
+              <TelegramIcon sx={{width:"20px",height:"20px",color:"#00000099",cursor:"pointer",":hover":{color:"#242424"}}}/>
+              <FacebookIcon sx={{width:"20px",height:"20px",color:"#00000099",cursor:"pointer",":hover":{color:"#242424"}}}/>
+              <FacebookIcon sx={{width:"20px",height:"20px",color:"#00000099",cursor:"pointer",":hover":{color:"#242424"}}}/>
             </div>
             <div className="flex items-center px-[15px] text-[14px] text-[#333333] ">
-              <ShuffleIcon sx={{ ml: "5px" }} />
+              <div className="flex hover:text-[#777] cursor-pointer">
+                 <ShuffleIcon sx={{ ml: "5px",width:"16px",height:"16px" }} />
               <p className="ml-[20px]">اشتراک</p>
-              <FavoriteBorderIcon sx={{ ml: "5px" }} />
+              </div>
+             <div className="flex hover:text-[#777] cursor-pointer">
+               <FavoriteBorderIcon sx={{ ml: "5px",width:"16px",height:"16px" }} />
               <p>اضافه کردن به لیست آرزوها</p>
+             </div>
+             
             </div>
           </div>
           <div className="text-[14px] mb-[20px] border-b pb-[15px]">
