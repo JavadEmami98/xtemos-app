@@ -1,6 +1,7 @@
 import { Box, Button } from "@mui/material";
 import React from "react";
 
+
 function Swiper1Cart({title, descripttion1,descripttion2,image,paragraph}) {
   return (
     <div>
@@ -16,8 +17,8 @@ function Swiper1Cart({title, descripttion1,descripttion2,image,paragraph}) {
           alignItems: "center",
         }}
       >
-        <div className=" flex flex-col lg:mr-[75px] px-[15px]">     
-          <div className="cart-mo relative lg:text-7xl md:text-[42px] text-[30px] mb-[20px] leading-[52px] lg:leading-[82px] text-[#242424] text-start">
+        <div className="flex flex-col lg:mr-[75px] px-[15px]">     
+          <div   className="cart-mo relative lg:text-7xl md:text-[42px] text-[30px] mb-[20px] leading-[52px] lg:leading-[82px] text-[#242424] text-start">
             {title} <br />
             {paragraph}
           </div>
@@ -29,7 +30,7 @@ function Swiper1Cart({title, descripttion1,descripttion2,image,paragraph}) {
           </div> </div>
           <div className="btn-mo flex">
               <Button variant="contained" sx={{width:"96.78px !important", height:"42px !important",ml:"15px",fontSize:"13px",backgroundcolor:"#2e6bc6"}}>فروشگاه</Button>
-              <Button variant="outlined" sx={{width:"96.78px !important", height:"42px !important",color:"#333",border:"#00000000",fontSize:"13px"}}>خرید</Button>
+              <Button variant="outlined" sx={{width:"96.78px !important", height:"42px !important",color:"#333",border:"1px solid #00000000",fontSize:"13px"}}>خرید</Button>
           </div>
          
          

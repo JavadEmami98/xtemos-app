@@ -1,6 +1,8 @@
 .swiper1 {
   width: 100% !important;
   height: 100% !important;
+  font-size: medium !important;
+  
 }
 
 .swiper-slide1 {
@@ -21,14 +23,41 @@
   width: 100% !important;
 }
 
-.swiper-button-next:after {
+/* .swiper-button-next:after {
   color: black;
 }
 
+.swiper-button-next:after:hover {
+  color: #777 !important;
+}
+ */
+
 .swiper-button-prev {
-  color: black;
+  color: #333;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.swiper-button-prev:hover {
+  color: #777;
 }
 
 .swiper-button-next {
-  color: black;
+  color: #333;
+  width: 30px !important;
+  height: 30px !important;
+}
+
+.swiper-button-next:hover {
+  color: #777;
+}
+
+.swiper-button-next:after {
+  font-size: 25px !important;
+  font-weight: bold;
+}
+
+.swiper-button-prev:after {
+  font-size: 25px !important;
+  font-weight: bold;
 }
