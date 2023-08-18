@@ -1,0 +1,39 @@
+.swiper-technolife .swiper-tech {
+  width: 100%;
+  height: 316px !important;
+}
+
+.swiper-technolife .swiper-slide-tech {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-technolife .swiper-slide-tech img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-technolife .swiper-pagination-bullet-active-tech {
+  width: 8px !important;
+  height: 20px !important;
+  color: #fff !important;
+  background-color: #fff !important;
+  border-radius: 20px !important;
+  box-shadow: 0 1px 2px 0 #00000042 !important;
+  z-index: 10 !important;
+  opacity: 1 !important;
+}
+
+.swiper-technolife .swiper-horizontal-tech {
+  position: absolute !important;
+  bottom: 10px !important;
+  left: 575px !important;
+}

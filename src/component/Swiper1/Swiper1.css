@@ -1,11 +1,10 @@
-.swiper1 {
+.swiper-hedear .swiper1 {
   width: 100% !important;
   height: 100% !important;
   font-size: medium !important;
-  
 }
 
-.swiper-slide1 {
+.swiper-hedear .swiper-slide1 {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -17,47 +16,100 @@
   width: 100%;
 }
 
-.swiper-slide img {
+.swiper-hedear .swiper-slide img {
   object-fit: cover;
   height: 100%;
   width: 100% !important;
 }
 
-/* .swiper-button-next:after {
-  color: black;
-}
-
-.swiper-button-next:after:hover {
-  color: #777 !important;
-}
- */
-
-.swiper-button-prev {
+.swiper-hedear .swiper-button-prev {
   color: #333;
   width: 30px !important;
   height: 30px !important;
 }
 
-.swiper-button-prev:hover {
+.swiper-hedear .swiper-button-prev:hover {
   color: #777;
 }
 
-.swiper-button-next {
+.swiper-hedear .swiper-button-next {
   color: #333;
   width: 30px !important;
   height: 30px !important;
 }
 
-.swiper-button-next:hover {
+.swiper-hedear .swiper-button-next:hover {
   color: #777;
 }
 
-.swiper-button-next:after {
+.swiper-hedear .swiper-button-next:after {
   font-size: 25px !important;
   font-weight: bold;
 }
 
-.swiper-button-prev:after {
+.swiper-hedear .swiper-button-prev:after {
   font-size: 25px !important;
   font-weight: bold;
+}
+
+.swiper-hedear .swiper-slide-active .cart-mo {
+  animation: cartMotion 0.7s forwards;
+  animation-timing-function: ease, cubic-bezier(0, 0.87, 0.58, 1);
+  opacity: 0;
+  /*  transform: translate(150px, 250px); */
+  transform: translate(100px, 100px);
+}
+
+@keyframes cartMotion {
+  0% {
+    opacity: 0;
+    /*  transform: translate(150px, 500px); */
+    transform: translate(0px, 150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.swiper-hedear .swiper-slide-active .text-mo {
+  animation: textMotion 1.2s forwards;
+  animation-timing-function: ease, cubic-bezier(0, 0.87, 0.58, 1);
+  opacity: 0;
+  transform: translate(100px, 100px);
+  will-change: transform, opacity;
+}
+
+@keyframes textMotion {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 150px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.swiper-hedear .swiper-slide-active .btn-mo {
+  animation: btnMotion 1.5s forwards;
+  animation-timing-function: ease, cubic-bezier(0, 0.87, 0.58, 1);
+  opacity: 0;
+  transform: translate(100px, 100px);
+}
+
+@keyframes btnMotion {
+  0% {
+    opacity: 0;
+    transform: translate(0px, 130px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.swiper-hedear .swiper-pagination-bullet-active-1 {
+  background-color: #333;
+  opacity: 1;
 }

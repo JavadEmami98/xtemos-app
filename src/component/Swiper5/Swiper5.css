@@ -27,13 +27,13 @@
       position: absolute;
   } */
 
-.swiper-pagination-bullets .swiper-pagination-bullet,
+/* .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
   background-color: black;
-}
+} */
 
 .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
   position: absolute;
-  bottom: -8px;
+  bottom: 0px;
 }

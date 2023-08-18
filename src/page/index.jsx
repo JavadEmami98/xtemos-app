@@ -5,6 +5,7 @@ import Part1 from "../component/Part1/Part1";
 import CustomTab from "../component/Tab/Tab";
 import Part2 from "../component/Part2/Part2";
 import Swiper3 from "../component/Swiper3/Swiper3";
+import SwiperDigido from "../component/SwiperDigido/SwiperDigido";
 import GridFour from "../component/GridFour/GridFour";
 import Part3 from "../component/Part3/Part3";
 import Swiper4 from "../component/Swiper4/Swiper4";
@@ -15,6 +16,8 @@ import Footer from "../component/layout/footer/Footer";
 import BottomNavigation from "../component/layout/footer/BottomNavigation";
 import BackToTopButton from "../component/BackToTop/BackToTop";
 import IndexHeader from "../component/layout/header/IndexHeader";
+import Swiper140 from "../component/Swiper140/Swiper140";
+import SwiperTechnolife from "../component/SwiperTechnolife/SwiperTechnolife";
 
 function Index() {
   return (
@@ -24,6 +27,9 @@ function Index() {
       </div>
       <Swiper1 />
       <div className="container">
+        <SwiperDigido />
+        <Swiper140 />
+        <SwiperTechnolife/>
         <Swiper2 />
         <Part1 />
         <CustomTab />
