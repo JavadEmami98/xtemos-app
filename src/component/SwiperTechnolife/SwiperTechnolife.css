@@ -35,5 +35,5 @@
 .swiper-technolife .swiper-horizontal-tech {
   position: absolute !important;
   bottom: 10px !important;
-  left: 575px !important;
+  left: auto !important;
 }
