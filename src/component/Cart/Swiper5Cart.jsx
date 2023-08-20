@@ -5,24 +5,25 @@ import ShareOutlinedIcon from "@mui/icons-material/ShareOutlined";
 
 function Swiper5Cart() {
   return (
-    <div className=" w-full rounded-[8px] overflow-hidden border">
+    <div className=" w-full rounded-[8px] overflow-hidden border cursor-pointer">
       <Box
         sx={{
           ":hover": {
             img: {
-              transform: "scale(1.2)",
-              transition: "all ease-in 500ms ",
+              transform: "scale(1.1)",
+              transition: "all ease-in 450ms",     
             },
           },
         }}
       >
-        <div className="relative">
+        <div className="relative ">
+          <div className="relative overflow-hidden">   
           <img
             src="https://a6n4d3q9.rocketcdn.me/accessories/wp-content/uploads/sites/7/2022/04/accessories-blog-img-5-768x475.jpg"
             alt=""
             loading="lazy"
             className="lg:h-[192px] md:h-[192px] sm:h-[225px] object-cover w-full overflow-hidden cursor-pointer"
-          />
+          /></div>
           <div className="flex flex-col absolute top-[10px] left-[10px] w-[53px] h-[56px]  bg-white rounded-[8px]">
             <span className="text-[24px]">22</span>
             <span className="text-[12px] pb-[6px] font-semibold">APR</span>
