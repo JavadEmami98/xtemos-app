@@ -1,0 +1,55 @@
+.swiper-pay2 .swiper-pay {
+  width: 100%;
+  height: 100% !important;
+}
+
+.swiper-pay2 .swiper-slide-pay {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 36px !important;
+  max-height: 36px !important;
+    margin: 6px 0px !important;
+}
+/* 
+.swiper-pay2 .swiper-slide-pay .swiper-slide-active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px !important;
+    background-color: red;
+    color: red;
+} */
+
+.swiper-pay2 .swiper-slide-active p {
+
+  color: #2c3544;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.swiper-pay2 .swiper-slide-active p:nth-child(2) {
+  
+  color: #2c3544;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+
+.swiper-pay2 .swiper-button-disabled {
+    opacity: .3;
+    cursor: unset;
+}
+
+.swiper-pay2 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
