@@ -5,7 +5,13 @@ import { Button } from "@mui/material";
 
 
 
-function Pay() {
+export default function Pay() {
+  const handleClick = () => {
+    window.scrollTo({
+      top: window.pageYOffset + 225,
+      behavior: 'smooth',
+    });
+  };
   return (
     <>
     <div className="container flex flex-col  lg:mt-[64px] md:mt-[64px] mt-[32px] lg:py-[64px] lg:px-[64px] md:py-[64px] md:px-[24px] p-[32px_8px_8px] border rounded-[24px] bg-[#fff] overflow-hidden">
@@ -20,8 +26,8 @@ function Pay() {
           <div className="flex items-center justify-center lg:px-[24px] md:px-[24px] px-[16px] lg:py-[13px] md:py-[13px] py-[8px] border-[2px] border-[#dee3e7]  rounded-[40px] lg:text-[14px] md:text-[14px] text-[12px] text-[#dee3e7] font-semibold cursor-pointer"> 9 قسط </div>
           <div className="flex items-center justify-center lg:px-[24px] md:px-[24px] px-[16px] lg:py-[13px] md:py-[13px] py-[8px] border-[2px] border-[#dee3e7] rounded-[40px] lg:text-[14px] md:text-[14px] text-[12px] text-[#dee3e7] font-semibold cursor-pointer"> 12 قسط </div>
          </div> 
-         <div className="flex items-center justify-center mt-[64px] border-t-[4px] border-[#f2f5f8] relative w-[150%] mr-[-26%] ">
-          <img src="https://www.mydigipay.com/icon-scroll-to.9c2d1a0bb59c5436.svg" alt="" className="object-cover h-[40px] z-10 absolute top-[-7px] cursor-pointer"/>
+         <div onClick={handleClick}  className="flex items-center justify-center mt-[64px] border-t-[4px] border-[#f2f5f8] relative w-[150%] mr-[-26%] ">
+          <img  src="https://www.mydigipay.com/icon-scroll-to.9c2d1a0bb59c5436.svg" alt="" className="object-cover h-[40px] z-10 absolute top-[-7px] cursor-pointer"/>
          </div>
       <div className="mt-[64px] text-[#2c3544] lg:text-[24px] md:text-[24px] text-[14px] font-semibold">
       طرح های موجود بر اساس مبلغ اعتبار انتخابی شما
@@ -78,5 +84,3 @@ function Pay() {
     </div></>
   );
 }
-
-export default Pay;
