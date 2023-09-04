@@ -21,7 +21,7 @@ export default function SwiperTechnolife() {
     <>
     <div className="swiper-technolife">
       <Swiper
-        style={{ marginTop: "30px",height:"344px"
+        style={{ marginTop: "30px",height:"344px",overflowX:"auto"
     }}
         cssMode={true}
         navigation={{

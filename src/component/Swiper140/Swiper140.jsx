@@ -20,8 +20,9 @@ export default function Swiper140() {
     <>
       <div className="swiper-140">
         <Swiper
-          style={{ marginTop: "30px", height: "316px" }}
+          style={{ marginTop: "30px", height: "316px"}}
           cssMode={true}
+          scrollbar={true}
           navigation={{
             nextEl: ".button-next-slide",
             prevEl: ".button-prev-slide",

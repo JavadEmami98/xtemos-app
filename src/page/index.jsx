@@ -18,7 +18,7 @@ import BackToTopButton from "../component/BackToTop/BackToTop";
 import IndexHeader from "../component/layout/header/IndexHeader";
 import Swiper140 from "../component/Swiper140/Swiper140";
 import SwiperTechnolife from "../component/SwiperTechnolife/SwiperTechnolife";
-import SwiperPay from "../component/SwiperPay/SwpierPay";
+/* import SwiperPay from "../component/SwiperPay/SwpierPay"; */
 
 
 function Index() {
@@ -29,7 +29,7 @@ function Index() {
       </div>
     {/*   <Swiper1 /> */}
       <div className="container">
-        <SwiperPay/>
+        {/* <SwiperPay/> */}
         <SwiperDigido />
         <Swiper140 />
         <SwiperTechnolife/>

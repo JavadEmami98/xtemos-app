@@ -17,7 +17,7 @@ export default function SwiperPay() {
     <>
       <div className="swiper-pay2">
       <Swiper
-        style={{display:"flex",alignItems:"center",justifyContent:"center" ,margin: "24px 0px", padding: "24px 8px",backgroundColor:"#fff",width:"790px",height:"100%",overflow:"hidden" }}
+        style={{display:"flex",alignItems:"center",justifyContent:"center" ,margin: "24px 0px", padding: "24px",backgroundColor:"#fff",overflow:"hidden",width:"100%"}}
         slidesPerView={3}
         centeredSlides={true}
         spaceBetween={0}
@@ -28,7 +28,7 @@ export default function SwiperPay() {
           disabledClass:".swiper-button-disabled"
         }}
         modules={[Pagination, Navigation]}
-        className="relative group flex items-center justify-center border-[2px] border-[#dee3e7] rounded-[12px]"
+        className="relative group flex items-center justify-center border-[2px] border-[#dee3e7] rounded-[12px] w-full"
       >
         <SwiperSlide className="swiper-slide-pay">
           <div className="flex items-end justify-center text-[24px] text-[#061962] font-light">

@@ -4,6 +4,7 @@ import DropDown from '../component/DropDown/DropDrown'
 import CloseIcon from '@mui/icons-material/Close';
 
 function CheckOut() {
+ /*  const theme = createMuiTheme({ shadows: ["none"] }); */
   return (
     <div>
         {/* Header */}

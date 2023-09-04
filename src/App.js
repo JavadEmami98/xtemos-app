@@ -8,6 +8,7 @@ import Cart from "./page/Cart";
 import Login from "./page/Login";
 import LoginPassword from "./page/LoginPassword";
 import ContactUs from "./page/ContactUs";
+import Pay from "./page/Pay";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/loginpassword" element={<LoginPassword />} />
         <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/pay" element={<Pay />} />
       </Routes>
     </BrowserRouter>
   );
