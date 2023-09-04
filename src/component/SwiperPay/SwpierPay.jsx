@@ -12,15 +12,36 @@ import "./SwiperPay.css";
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
 
+
+
+const breakpoints = {
+  "1024": {
+    slidesPerView:3,
+    spaceBetween: 0,
+  },
+  "768": {
+    slidesPerView:1,
+    spaceBetween: 0,
+  },
+  "680": {
+    slidesPerView: 1,
+    spaceBetween: 0,
+  },
+  "0": {
+    slidesPerView: 1,
+    spaceBetween:0,
+  },
+};
+
 export default function SwiperPay() {
   return (
     <>
       <div className="swiper-pay2">
       <Swiper
         style={{display:"flex",alignItems:"center",justifyContent:"center" ,margin: "24px 0px", padding: "24px",backgroundColor:"#fff",overflow:"hidden",width:"100%"}}
-        slidesPerView={3}
+      /*   slidesPerView={3} */
         centeredSlides={true}
-        spaceBetween={0}
+        breakpoints={breakpoints}
         slideActiveClass="swiper-slide-active"
         navigation={{
           nextEl: ".button-next-slide",
@@ -28,7 +49,7 @@ export default function SwiperPay() {
           disabledClass:".swiper-button-disabled"
         }}
         modules={[Pagination, Navigation]}
-        className="relative group flex items-center justify-center border-[2px] border-[#dee3e7] rounded-[12px] w-full"
+        className="relative group flex items-center justify-center border-[2px] border-[#dee3e7] rounded-[12px] w-full overflow-hidden"
       >
         <SwiperSlide className="swiper-slide-pay">
           <div className="flex items-end justify-center text-[24px] text-[#061962] font-light">

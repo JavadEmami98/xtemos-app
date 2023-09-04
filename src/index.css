@@ -274,3 +274,6 @@ code {
   opacity: 1;
 }
 
+.noShadow {
+  box-shadow: none !important;
+}
