@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import Index from "./page";
 import Product from "./page/Product";
 import CheckOut from "./page/CheckOut";
@@ -9,6 +8,16 @@ import Login from "./page/Login";
 import LoginPassword from "./page/LoginPassword";
 import ContactUs from "./page/ContactUs";
 import Pay from "./page/Pay";
+import Admin from "./page/Admin";
+import "./App.css";
+import CustomSize from "./page/CustomSize";
+import Step1 from "./page/Step1";
+import Step2 from "./page/Step2";
+import Step3 from "./page/Step3";
+import Step4 from "./page/Step4";
+import Step5 from "./page/Step5";
+import Step51 from "./page/Step51";
+
 
 function App() {
   return (
@@ -23,6 +32,14 @@ function App() {
         <Route path="/loginpassword" element={<LoginPassword />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/pay" element={<Pay />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/customsize" element={<CustomSize />} />
+        <Route path="/step1" element={<Step1 />} />
+        <Route path="/step2" element={<Step2 />} />
+        <Route path="/step3" element={<Step3 />} />
+        <Route path="/step4" element={<Step4 />} />
+        <Route path="/step5" element={<Step5 />} />
+        <Route path="/step51" element={<Step51 />} />
       </Routes>
     </BrowserRouter>
   );

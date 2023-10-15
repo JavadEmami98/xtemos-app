@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="177" height="177" viewBox="0 0 177 177">
+  <g id="Group_1599" data-name="Group 1599" transform="translate(-163 -803)">
+    <g id="Ellipse_129" data-name="Ellipse 129" transform="translate(163 803)" fill="#fff" stroke="#707070" stroke-width="1" stroke-dasharray="11">
+      <circle cx="88.5" cy="88.5" r="88.5" stroke="none"/>
+      <circle cx="88.5" cy="88.5" r="88" fill="none"/>
+    </g>
+    <g id="Checkmark" transform="translate(187 828)">
+      <path id="Path_5346" data-name="Path 5346" d="M106.4,21.6h0A59.963,59.963,0,1,0,64,124a61.179,61.179,0,0,0,21.9-4.1,59.878,59.878,0,0,0,37.5-47.6A59.6,59.6,0,0,0,106.4,21.6Z" fill="#fff"/>
+      <circle id="Ellipse_149" data-name="Ellipse 149" cx="36" cy="36" r="36" transform="translate(28 28)" fill="#8ce5c3"/>
+      <path id="Path_5347" data-name="Path 5347" d="M64,79a2.723,2.723,0,0,1-2.1-.9l-15-15a2.97,2.97,0,0,1,4.2-4.2L63.8,71.6,91.7,39a2.977,2.977,0,0,1,4.5,3.9l-30,35a2.865,2.865,0,0,1-2.2,1C64.1,79,64,79,64,79Z" fill="#444b54"/>
+      <path id="Path_5348" data-name="Path 5348" d="M64,127a63,63,0,1,1,63-63A63.121,63.121,0,0,1,64,127ZM64,7a57,57,0,1,0,57,57A57.1,57.1,0,0,0,64,7Z" fill="#00aeba"/>
+    </g>
+  </g>
+</svg>
