@@ -2,6 +2,8 @@ import React from "react";
 import SwiperPay from "../component/SwiperPay/SwpierPay";
 import CircleIcon from '@mui/icons-material/Circle';
 import { Button } from "@mui/material";
+import QA from "../component/Q&A/Q&A";
+import Online from "../component/Online/Online";
 
 
 
@@ -15,6 +17,7 @@ export default function Pay() {
   return (
     <>
     <div className="container flex flex-col  lg:mt-[64px] md:mt-[64px] mt-[32px] lg:py-[64px] lg:px-[64px] md:py-[64px] md:px-[24px] p-[32px_8px_8px] border rounded-[24px] bg-[#fff] overflow-hidden">
+     <Online/>
       <h2 className="lg:text-[32px] md:text-[32px] text-[20px] font-black text-[#424c5c] text-center">
         طرح‌های اعتباری و اقساط آن
       </h2>
@@ -80,7 +83,9 @@ export default function Pay() {
         </div>
       </div>
       </div>
-      
-    </div></>
+     
+    </div> 
+    <QA/>
+    </>
   );
 }

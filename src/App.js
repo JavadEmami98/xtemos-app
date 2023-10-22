@@ -9,6 +9,7 @@ import LoginPassword from "./page/LoginPassword";
 import ContactUs from "./page/ContactUs";
 import Pay from "./page/Pay";
 import Admin from "./page/Admin";
+import Admin2 from "./page/Admin2";
 import "./App.css";
 import CustomSize from "./page/CustomSize";
 import Step1 from "./page/Step1";
@@ -32,7 +33,8 @@ function App() {
         <Route path="/loginpassword" element={<LoginPassword />} />
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/pay" element={<Pay />} />
-        <Route path="/admin" element={<Admin />} />
+     {/*    <Route path="/admin" element={<Admin />} /> */}
+        <Route path="/admin2" element={<Admin2 />} />
         <Route path="/customsize" element={<CustomSize />} />
         <Route path="/step1" element={<Step1 />} />
         <Route path="/step2" element={<Step2 />} />

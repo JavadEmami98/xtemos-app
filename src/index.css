@@ -274,3 +274,27 @@ code {
 .noShadow {
   box-shadow: none !important;
 }
+
+/* .register-ani {
+  animation: moveLeft .5s ease-in-out forwards;
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+} */
+
+.hidden {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.visible {
+  max-height: 500px; /* Adjust this value based on your content */
+  transition: max-height 0.5s ease-in-out;
+}
+

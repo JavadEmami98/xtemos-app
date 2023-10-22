@@ -1,4 +1,4 @@
-/* import { Box, Typography, TextField, Button } from "@mui/material";
+import { Box, Typography, TextField, Button } from "@mui/material";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import LaptopIcon from "@mui/icons-material/Laptop";
@@ -16,37 +16,10 @@ import CardMembershipIcon from "@mui/icons-material/CardMembership";
 import SecurityIcon from "@mui/icons-material/Security";
 import InputIcon from "@mui/icons-material/Input";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import React, { useState } from "react";
-import { Email } from "@mui/icons-material";
+import React from "react";
 
-function Admin() {
+function Admin2() {
   const [value, setValue] = React.useState("1");
-    const [entredUsername, setEntredUsername] = useState("");
-  const [inputValue, setInputValue] = useState("");
-  const [formData, setFormData] = useState({
-    name: "",
-    password: "",
-  });
-  const { name, password } = formData;
-
-  const Onchange = (e) => {
-    setFormData((prevState) => ({
-      ...prevState,
-      [e.target.id]: e.target.value,
-    }));
-    console.log(formData);
-  };
-
-  const addUserHandler = (event) => {
-    event.preventDefault();
-  };
-
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
-  const usernameChangeHandler = (event) => {
-    setEntredUsername(event.target.value);
-  };
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -71,6 +44,7 @@ function Admin() {
           backgroundSize: "cover",
           height: "100vh",
           mt: "0",
+          width: "100%",
         }}
       >
         <div className="flex flex-col gap-4 items-center">
@@ -114,17 +88,14 @@ function Admin() {
                       </TabList>
                     </Box>
                     <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-4 gap-2 min-h-[530px]">
-                      <div className="lg:col-span-2 md:col-span-2 col-span-1 ">
+                      <div className="lg:col-span-2 md:col-span-2 col-span-1 p-3">
                         <TabPanel value="1">
-                          <div className="flex flex-col gap-6 items-center p-3">
+                          <div className="flex flex-col gap-6 items-center">
                             <h1 className="text-[21px] text-[#000000] font-semibold">
                               ورود با نام کاربری
                             </h1>
                             <TextField
-                              onChange={Onchange}
-                              value={name}
-                              id="name"
-                              type="text"
+                              id="outlined-basic"
                               label="نام کاربری/کد ملی"
                               variant="outlined"
                               sx={{
@@ -137,15 +108,11 @@ function Admin() {
                               sx={{ width: "100%" }}
                               variant="outlined"
                             >
-                              <InputLabel
-                                id="password"
-                                value={password}
-                                Onchange={Onchange}
-                                htmlFor="outlined-adornment-password"
-                              >
+                              <InputLabel htmlFor="outlined-adornment-password">
                                 رمز عبور
                               </InputLabel>
                               <OutlinedInput
+                                id="outlined-adornment-password"
                                 type={showPassword ? "text" : "password"}
                                 endAdornment={
                                   <InputAdornment position="end">
@@ -190,12 +157,12 @@ function Admin() {
                                 className="w-full"
                               />
 
-                                <Skeleton
+                              {/*   <Skeleton
                                 variant="rounded"
                                 width={200}
                                 height={53}
                                 animation="wave"
-                              />
+                              />*/}
                               <IconButton
                                 sx={{
                                   display: "flex",
@@ -266,7 +233,6 @@ function Admin() {
 
                             <Box sx={{ my: "3.25px", width: "100%" }}>
                               <Button
-                                onClick={addUserHandler}
                                 variant="contained"
                                 sx={{
                                   height: "3.1rem",
@@ -286,30 +252,53 @@ function Admin() {
                         </TabPanel>
                         <TabPanel value="2">
                           <div className="px-4">
-                            <div className="px-[15px] text-[20px] mt-[20px] text-center font-bold">
+                            <div className="px-[15px] mt-[20px] text-[20px] text-center font-bold">
                               ورود با رمز عبور یک بار مصرف
                             </div>
-                            <TextField
-                                value={inputValue}
-                              onChange={handleInputChange}
-                              id="outlined-basic"
-                              label="تلفن همراه"
-                              variant="outlined"
-                              type="tel"
-                              sx={{
-                                width: "100%",
-                                mt: "24px",
-                              }}
-                            />
-                            <div className="flex gap-2 justify-between mt-[20px] px-[12px] w-full">
+                            <div className="flex flex-col py-3 justify-center items-center gap-[40px]">
+                              <h3 className="text-[18px] text-[#000000DE] mb-[20px]">
+                                کد ارسالی را وارد کنید
+                              </h3>
+                              <div className="w-full border bg-blue-50 border-blue-300 rounded-sm py-4 flex flex-col justify-center items-center gap-3">
+                                <div className="px-3">
+                                  <span>کد تاییدی به شماره </span>
+                                  <strong>0912121210</strong>
+                                  <span> ارسال شد.</span>
+                                </div>
+                                <Button
+                                  variant="text"
+                                  sx={{
+                                    color: "#673ab7",
+                                    backgroundColor: "#00000000",
+                                  }}
+                                >
+                                  تغیر شماره موبایل
+                                </Button>
+                              </div>
+                              xczxc
+                              <div className="flex items-center gap-4 px-[32px]">
+                                <span className="text-[0.75rem] text-[#000000DE]">
+                                  کد را دریافت نکرده اید؟
+                                </span>
+                                <Button
+                                  variant="outlined"
+                                  sx={{
+                                    fontSize: "12px",
+                                    color: "#673ab7",
+                                    height: "28px",
+                                    border: "1px solid #673ab7 !important",
+                                  }}
+                                >
+                                  دریافت مجدد کد
+                                </Button>
+                              </div>
+                            </div>
+                            <div className="flex justify-between px-[12px] w-full">
                               <Button
-                                   disabled={inputValue.length <= 9}
-                                type="tel"
                                 variant="contained"
                                 sx={{
                                   fontSize: "16px",
-                                  minWidth: "64px !important",
-                                  width: "100%",
+                                  minWidth: "112px !important",
                                 }}
                               >
                                 ثبت
@@ -319,52 +308,19 @@ function Admin() {
                                 sx={{
                                   fontSize: "16px",
                                   minWidth: "64px !important",
-                                  width: "100%",
-                                }}
-                              >
-                                بازگشت
-                              </Button>
-                            </div>
-                          </div>
-                        </TabPanel>
-                        <TabPanel value="3">
-                          <div className="my-auto  mx-auto  mt-2 px-2">
-                            <h1 className="text-[21px] mb-[24px] text-center font-bold">
-                              ورود با QR
-                            </h1>
-                            <div className="flex flex-col items-center border w-full">
-                              <div className="relative w-full text-center px-[10px] py-[2px] m-1 bg-[#cb243124] text-[12px] text-[#cb2431]">
-                                NotAllowedError: Permission denied
-                                <img
-                                  src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0NjAgNDYwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NjAgNDYwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBkPSJNMjMwIDBDMTAyLjk3NSAwIDAgMTAyLjk3NSAwIDIzMHMxMDIuOTc1IDIzMCAyMzAgMjMwIDIzMC0xMDIuOTc0IDIzMC0yMzBTMzU3LjAyNSAwIDIzMCAwem0zOC4zMzMgMzc3LjM2YzAgOC42NzYtNy4wMzQgMTUuNzEtMTUuNzEgMTUuNzFoLTQzLjEwMWMtOC42NzYgMC0xNS43MS03LjAzNC0xNS43MS0xNS43MVYyMDIuNDc3YzAtOC42NzYgNy4wMzMtMTUuNzEgMTUuNzEtMTUuNzFoNDMuMTAxYzguNjc2IDAgMTUuNzEgNy4wMzMgMTUuNzEgMTUuNzFWMzc3LjM2ek0yMzAgMTU3Yy0yMS41MzkgMC0zOS0xNy40NjEtMzktMzlzMTcuNDYxLTM5IDM5LTM5IDM5IDE3LjQ2MSAzOSAzOS0xNy40NjEgMzktMzkgMzl6Ii8+PC9zdmc+"
-                                  alt=""
-                                  className="h-[14px] absolute top-0 right-1 opacity-[0.6]"
-                                />
-                              </div>
-                              <img
-                                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzNzEuNjQzIDM3MS42NDMiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM3MS42NDMgMzcxLjY0MyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHBhdGggZD0iTTEwNS4wODQgMzguMjcxaDE2My43Njh2MjBIMTA1LjA4NHoiLz48cGF0aCBkPSJNMzExLjU5NiAxOTAuMTg5Yy03LjQ0MS05LjM0Ny0xOC40MDMtMTYuMjA2LTMyLjc0My0yMC41MjJWMzBjMC0xNi41NDItMTMuNDU4LTMwLTMwLTMwSDEyNS4wODRjLTE2LjU0MiAwLTMwIDEzLjQ1OC0zMCAzMHYxMjAuMTQzaC04LjI5NmMtMTYuNTQyIDAtMzAgMTMuNDU4LTMwIDMwdjEuMzMzYTI5LjgwNCAyOS44MDQgMCAwIDAgNC42MDMgMTUuOTM5Yy03LjM0IDUuNDc0LTEyLjEwMyAxNC4yMjEtMTIuMTAzIDI0LjA2MXYxLjMzM2MwIDkuODQgNC43NjMgMTguNTg3IDEyLjEwMyAyNC4wNjJhMjkuODEgMjkuODEgMCAwIDAtNC42MDMgMTUuOTM4djEuMzMzYzAgMTYuNTQyIDEzLjQ1OCAzMCAzMCAzMGg4LjMyNGMuNDI3IDExLjYzMSA3LjUwMyAyMS41ODcgMTcuNTM0IDI2LjE3Ny45MzEgMTAuNTAzIDQuMDg0IDMwLjE4NyAxNC43NjggNDUuNTM3YTkuOTg4IDkuOTg4IDAgMCAwIDguMjE2IDQuMjg4IDkuOTU4IDkuOTU4IDAgMCAwIDUuNzA0LTEuNzkzYzQuNTMzLTMuMTU1IDUuNjUtOS4zODggMi40OTUtMTMuOTIxLTYuNzk4LTkuNzY3LTkuNjAyLTIyLjYwOC0xMC43Ni0zMS40aDgyLjY4NWMuMjcyLjQxNC41NDUuODE4LjgxNSAxLjIxIDMuMTQyIDQuNTQxIDkuMzcyIDUuNjc5IDEzLjkxMyAyLjUzNCA0LjU0Mi0zLjE0MiA1LjY3Ny05LjM3MSAyLjUzNS0xMy45MTMtMTEuOTE5LTE3LjIyOS04Ljc4Ny0zNS44ODQgOS41ODEtNTcuMDEyIDMuMDY3LTIuNjUyIDEyLjMwNy0xMS43MzIgMTEuMjE3LTI0LjAzMy0uODI4LTkuMzQzLTcuMTA5LTE3LjE5NC0xOC42NjktMjMuMzM3YTkuODU3IDkuODU3IDAgMCAwLTEuMDYxLS40ODZjLS40NjYtLjE4Mi0xMS40MDMtNC41NzktOS43NDEtMTUuNzA2IDEuMDA3LTYuNzM3IDE0Ljc2OC04LjI3MyAyMy43NjYtNy42NjYgMjMuMTU2IDEuNTY5IDM5LjY5OCA3LjgwMyA0Ny44MzYgMTguMDI2IDUuNzUyIDcuMjI1IDcuNjA3IDE2LjYyMyA1LjY3MyAyOC43MzMtLjQxMyAyLjU4NS0uODI0IDUuMjQxLTEuMjQ1IDcuOTU5LTUuNzU2IDM3LjE5NC0xMi45MTkgODMuNDgzLTQ5Ljg3IDExNC42NjEtNC4yMjEgMy41NjEtNC43NTYgOS44Ny0xLjE5NCAxNC4wOTJhOS45OCA5Ljk4IDAgMCAwIDcuNjQ4IDMuNTUxIDkuOTU1IDkuOTU1IDAgMCAwIDYuNDQ0LTIuMzU4YzQyLjY3Mi0zNi4wMDUgNTAuODAyLTg4LjUzMyA1Ni43MzctMTI2Ljg4OC40MTUtMi42ODQuODIxLTUuMzA5IDEuMjI5LTcuODYzIDIuODM0LTE3LjcyMS0uNDU1LTMyLjY0MS05Ljc3Mi00NC4zNDV6bS0yMzIuMzA4IDQyLjYyYy01LjUxNCAwLTEwLTQuNDg2LTEwLTEwdi0xLjMzM2MwLTUuNTE0IDQuNDg2LTEwIDEwLTEwaDE1djIxLjMzM2gtMTV6bS0yLjUtNTIuNjY2YzAtNS41MTQgNC40ODYtMTAgMTAtMTBoNy41djIxLjMzM2gtNy41Yy01LjUxNCAwLTEwLTQuNDg2LTEwLTEwdi0xLjMzM3ptMTcuNSA5My45OTloLTcuNWMtNS41MTQgMC0xMC00LjQ4Ni0xMC0xMHYtMS4zMzNjMC01LjUxNCA0LjQ4Ni0xMCAxMC0xMGg3LjV2MjEuMzMzem0zMC43OTYgMjguODg3Yy01LjUxNCAwLTEwLTQuNDg2LTEwLTEwdi04LjI3MWg5MS40NTdjLS44NTEgNi42NjgtLjQzNyAxMi43ODcuNzMxIDE4LjI3MWgtODIuMTg4em03OS40ODItMTEzLjY5OGMtMy4xMjQgMjAuOTA2IDEyLjQyNyAzMy4xODQgMjEuNjI1IDM3LjA0IDUuNDQxIDIuOTY4IDcuNTUxIDUuNjQ3IDcuNzAxIDcuMTg4LjIxIDIuMTUtMi41NTMgNS42ODQtNC40NzcgNy4yNTEtLjQ4Mi4zNzgtLjkyOS44LTEuMzM1IDEuMjYxLTYuOTg3IDcuOTM2LTExLjk4MiAxNS41Mi0xNS40MzIgMjIuNjg4aC05Ny41NjRWMzBjMC01LjUxNCA0LjQ4Ni0xMCAxMC0xMGgxMjMuNzY5YzUuNTE0IDAgMTAgNC40ODYgMTAgMTB2MTM1LjU3OWMtMy4wMzItLjM4MS02LjE1LS42OTQtOS4zODktLjkxNC0yNS4xNTktMS42OTQtNDIuMzcgNy43NDgtNDQuODk4IDI0LjY2NnoiLz48cGF0aCBkPSJNMTc5LjEyOSA4My4xNjdoLTI0LjA2YTUgNSAwIDAgMC01IDV2MjQuMDYxYTUgNSAwIDAgMCA1IDVoMjQuMDZhNSA1IDAgMCAwIDUtNVY4OC4xNjdhNSA1IDAgMCAwLTUtNXpNMTcyLjYyOSAxNDIuODZoLTEyLjU2VjEzMC44YTUgNSAwIDEgMC0xMCAwdjE3LjA2MWE1IDUgMCAwIDAgNSA1aDE3LjU2YTUgNSAwIDEgMCAwLTEwLjAwMXpNMjE2LjU2OCA4My4xNjdoLTI0LjA2YTUgNSAwIDAgMC01IDV2MjQuMDYxYTUgNSAwIDAgMCA1IDVoMjQuMDZhNSA1IDAgMCAwIDUtNVY4OC4xNjdhNSA1IDAgMCAwLTUtNXptLTUgMjQuMDYxaC0xNC4wNlY5My4xNjdoMTQuMDZ2MTQuMDYxek0yMTEuNjY5IDEyNS45MzZIMTk3LjQxYTUgNSAwIDAgMC01IDV2MTQuMjU3YTUgNSAwIDAgMCA1IDVoMTQuMjU5YTUgNSAwIDAgMCA1LTV2LTE0LjI1N2E1IDUgMCAwIDAtNS01eiIvPjwvc3ZnPg=="
-                                alt=""
-                                className="h-[64px] py-2"
-                              />
-                              <button className="py-[10px] px-2 text-[16px] text-center">
-                                برای ثبت پرمیژن استفاده از دوربین گوشی کلیک کنید
-                              </button>
-                            </div>
-                            <div className="flex justify-end">
-                              <Button
-                                variant="outlined"
-                                sx={{
-                                  fontSize: "14px",
+
                                   color: "#673ab7",
-                                  border: "1px solid #673ab780",
-                                  mt: "34px",
+                                  border: "1px solid #673ab7 !important",
                                 }}
                               >
+                                {" "}
+                                <InputIcon sx={{ mr: "5px" }} />
                                 بازگشت
                               </Button>
                             </div>
                           </div>
                         </TabPanel>
+                        <TabPanel value="3">Item Three</TabPanel>
                       </div>
                       <div className="lg:col-span-2 md:col-span-2 col-span-1 py-2">
                         <Box
@@ -425,5 +381,4 @@ function Admin() {
   );
 }
 
-export default Admin;
- */
+export default Admin2;
