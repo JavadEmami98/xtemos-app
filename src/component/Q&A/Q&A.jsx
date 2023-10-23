@@ -21,7 +21,7 @@ function QA() {
         <ul className="flex flex-col gap-4 w-full">
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px]">
                 گرفتن تسهیلات بانک تجارت برای چه کسانی امکان‌پذیر است؟
               </span>
               <AddCircleOutlinedIcon
@@ -39,6 +39,7 @@ function QA() {
               }}
               className={`details ${isVisible ? "visible" : "hidden"}`}
             >
+          
               <span>
                 افراد بین ۱۸ تا ۷۰ سال در صورت داشتن شرایط زیر می‌­توانند با طی
                 مسیر تخصیص اعتبار، این تسهیلات را دریافت کنند:
@@ -49,7 +50,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px]">
                 آیا می‌توانم با ورود به مراحل بعدی، اطلاعاتم را در مراحل قبل
                 تغییر بدهم؟
               </span>
@@ -76,7 +77,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 مدارک مورد نیاز و هزینه ثبت نام حضوری چه‌قدر است؟
               </span>
               <AddCircleOutlinedIcon
@@ -108,7 +109,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا می‌توانم بعد از ثبت نام، تعداد اقساط یا مبلغ وامم را تغییر
                 بدهم؟
               </span>
@@ -135,7 +136,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 مواردی مانند تاریخ تولد و غیره را صحیح وارد کردم، اما در قسمت
                 تکمیل اطلاعات با خطا مواجه می‌شوم، علت چیست؟
               </span>
@@ -163,7 +164,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 مواردی مانند تاریخ تولد و غیره را صحیح وارد کردم، اما در قسمت
                 تکمیل اطلاعات با خطا مواجه می‌شوم، علت چیست؟
               </span>
@@ -191,7 +192,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 قبلا با شماره موبایل خودم اما با کد ملی شخص دیگری ثبت نام کردم؛
                 آیا می‌توانم کد ملی را تغییر دهم و دوباره ثبت‌نام کنم؟
               </span>
@@ -220,7 +221,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا برای دریافت اعتبار با تامین مالی بانک تجارت، باید حتما حساب
                 بانکی تجارت داشته باشم؟
               </span>
@@ -247,7 +248,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 محاسبه امتیاز در امکان‌سنجی بر چه مبنایی است و چه عواملی در
                 محاسبه آن تاثیرگذراند؟
               </span>
@@ -277,7 +278,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 اگر نتیجه امکان‌سنجی من مردود اعلام شود، چه اتفاقی میفتد؟ آیا
                 باز هم می‌توانم برای ثبت‌نام اقدام کنم؟
               </span>
@@ -314,7 +315,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 اگر نتیجه امکان‌سنجیم موفقیت‌آمیز نباشد، آیا می‌توانم بعد از رفع
                 سوءاثر دوباره برای امکان‌سنجی اقدام کنم؟
               </span>
@@ -342,7 +343,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 اگر نتیجه امکان‌سنجیم موفقیت‌آمیز نباشد، آیا می‌توانم بعد از رفع
                 سوءاثر دوباره برای امکان‌سنجی اقدام کنم؟
               </span>
@@ -370,7 +371,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا می‌­توانم برای چک از دگرضامنی استفاده کنم؟
               </span>
               <AddCircleOutlinedIcon
@@ -396,7 +397,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 تصویر چکم تایید شده است؛ چطور اصل چک را برای دیجی‌پی ارسال کنم؟
               </span>
               <AddCircleOutlinedIcon
@@ -432,7 +433,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا می‌توانم چکی با تاریخ گذشته بارگذاری کنم؟
               </span>
               <AddCircleOutlinedIcon
@@ -458,7 +459,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا می توانم چکم را حضوری به شرکت تحویل بدهم؟
               </span>
               <AddCircleOutlinedIcon
@@ -485,7 +486,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">چکم را چطور پر کنم؟</span>
+              <span className="py-[27px] pl-[27px] leading-6">چکم را چطور پر کنم؟</span>
               <AddCircleOutlinedIcon
                 onClick={toggleDetails}
                 sx={{ color: "#424c5c" }}
@@ -510,7 +511,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا چک فقط باید برای خود متقاضی اعتبار باشد؟{" "}
               </span>
               <AddCircleOutlinedIcon
@@ -536,7 +537,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 اگر برای تحویل چک در محل (تهران) و زمان مشخص شده حاضر نباشم،
                 چطور می‌توانم دوباره هماهنگی‌های لازم را انجام دهم؟
               </span>
@@ -564,7 +565,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 بعد از ارسال اصل چک، چقدر طول می‌کشد تا چک تایید شود؟
               </span>
               <AddCircleOutlinedIcon
@@ -591,7 +592,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 هزینه ساخت امضای دیجیتال و امکان سنجی چقدر است؟
               </span>
               <AddCircleOutlinedIcon
@@ -616,7 +617,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 هزینه صدور سفته الکتروینک چقدر است؟
               </span>
               <AddCircleOutlinedIcon
@@ -639,7 +640,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا می‌توانم با نسخه تحت وب اپلیکیشن امضای دیجیتالم را بسازم؟
               </span>
               <AddCircleOutlinedIcon
@@ -662,7 +663,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا امضای ساخته شده تاریخ انقضا دارد؟
               </span>
               <AddCircleOutlinedIcon
@@ -688,7 +689,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا با پاک کردن اپلیکیشن دیجی‌پی برای امضای دیجیتالم مشکلی پیش
                 می‌آید؟
               </span>
@@ -715,7 +716,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا می‌توانم بعد از پرداخت هزینه خدمات و زیرساخت فرایند ثبت‌نام
                 را لغو کنم؟
               </span>
@@ -743,7 +744,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا برای دریافت وام باید هزینه خدمات و زیرساخت پرداخت کنم؟
               </span>
               <AddCircleOutlinedIcon
@@ -769,7 +770,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 بعد از پرداخت هزینه خدمات و زیرساخت، چقدر زمان می‌برد تا کیف
                 پولم فعال شود؟
               </span>
@@ -796,7 +797,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 بعد از چه مدتی از امضای قرارداد باید هزینه خدمات و زیرساخت را
                 پرداخت کنم؟
               </span>
@@ -823,7 +824,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا محدودیت کالایی در طرح تجارت وجود دارد؟
               </span>
               <AddCircleOutlinedIcon
@@ -850,7 +851,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 حداقل مبلغ خرید با اعتبار طرح تجارت چقدر است؟
               </span>
               <AddCircleOutlinedIcon
@@ -875,7 +876,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا می‌توانم بیشتر از مبلغ اعتبارم خرید کنم؟
               </span>
               <AddCircleOutlinedIcon
@@ -902,7 +903,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 هزینه خدمات و زیرساخت چطور باید پرداخت کنم؟
               </span>
               <AddCircleOutlinedIcon
@@ -930,7 +931,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 اگر در دوره خرید نتوانم کل اعتبارم را مصرف کنم، چه اتفاقی برای
                 باقی‌مانده اعتبارم میفتد؟
               </span>
@@ -962,7 +963,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 اقساطم در مدل بانک تجارت بر چه اساسی صادر می‌شوند؟
               </span>
               <AddCircleOutlinedIcon
@@ -995,7 +996,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">اقساطم چه زمانی صادر می‌­شوند؟</span>
+              <span className="py-[27px] pl-[27px] leading-6">اقساطم چه زمانی صادر می‌­شوند؟</span>
               <AddCircleOutlinedIcon
                 onClick={toggleDetails}
                 sx={{ color: "#424c5c" }}
@@ -1024,7 +1025,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 چه زمانی می‌توانم اقساطم را پرداخت کنم؟
               </span>
               <AddCircleOutlinedIcon
@@ -1051,7 +1052,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">چطور اقساطم را پرداخت کنم؟</span>
+              <span className="py-[27px] pl-[27px] leading-6">چطور اقساطم را پرداخت کنم؟</span>
               <AddCircleOutlinedIcon
                 onClick={toggleDetails}
                 sx={{ color: "#424c5c" }}
@@ -1075,7 +1076,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 چطور می‌توانم برای لغو فرایند ثبت‌نام درخواست بدهم؟
               </span>
               <AddCircleOutlinedIcon
@@ -1104,7 +1105,7 @@ function QA() {
 
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 در صورت داشتن اعتبار فعال با اقساطی باقی‌مانده می‌تواند از طرح
                 دیگری هم اعتبار دریافت کنم؟
               </span>
@@ -1131,7 +1132,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 آیا برای دریافت اعتبار از طرح تجارت باید به بانک هم مراجعه کنم؟
               </span>
               <AddCircleOutlinedIcon
@@ -1158,7 +1159,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 برای دریافت اعتبار با تامین مالی بانک تجارت چه نوع ضمانتی باید
                 ارائه کنم؟
               </span>
@@ -1185,7 +1186,7 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px]">
+              <span className="py-[27px] pl-[27px] leading-6">
                 فرایند دریافت اعتبار از شروع ثبت‌نام تا فعال‌سازی اعتبار چقدر
                 زمان می‌برد؟
               </span>

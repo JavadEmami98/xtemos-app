@@ -133,7 +133,7 @@ export default function SwiperPay() {
           <div className="absolute flex justify-center items-center h-full  w-[80px] top-auto left-0 bg-[#fff] cursor-pointer  z-10">
             <div className="absolute flex justify-center items-center h-[60px] w-[60px] top-auto left-2 bg-[#f0f5ff] rounded-[8px] border-[2px] border-[#0040ff] cursor-pointer button-next-slide z-10 ">
               <img
-                src="https://www.mydigipay.com/icon-charon-left-blue.8a91890026bc3851.svg"
+                src="https://www.mydigipay.com/icon-charon-left-blue.9e1023c9e5b118ff.svg"
                 alt=""
               />
             </div>
@@ -141,7 +141,7 @@ export default function SwiperPay() {
           <div className="absolute flex justify-center items-center h-full  w-[80px] top-auto right-0 bg-[#fff] cursor-pointer  z-10">
             <div className="absolute flex justify-center items-center h-[60px] w-[60px] top-auto right-2 bg-[#f0f5ff] rounded-[8px] border-[2px] border-[#0040ff] cursor-pointer button-prev-slide z-10 ">
               <img
-                src="https://www.mydigipay.com/icon-charon-right-blue.6b23fb984940b435.svg"
+                src="https://www.mydigipay.com/icon-charon-right-blue.0215ee47dbf2cafb.svg"
                 alt=""
               />
             </div>

@@ -18,6 +18,7 @@ import Step3 from "./page/Step3";
 import Step4 from "./page/Step4";
 import Step5 from "./page/Step5";
 import Step51 from "./page/Step51";
+import Payment from "./page/Payment";
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/step4" element={<Step4 />} />
         <Route path="/step5" element={<Step5 />} />
         <Route path="/step51" element={<Step51 />} />
+        <Route path="/payment" element={<Payment />} />
       </Routes>
     </BrowserRouter>
   );
