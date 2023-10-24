@@ -7,8 +7,6 @@ import Cart from "./page/Cart";
 import Login from "./page/Login";
 import LoginPassword from "./page/LoginPassword";
 import ContactUs from "./page/ContactUs";
-import Pay from "./page/Pay";
-import Admin from "./page/Admin";
 import Admin2 from "./page/Admin2";
 import "./App.css";
 import CustomSize from "./page/CustomSize";
@@ -33,7 +31,6 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/loginpassword" element={<LoginPassword />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/pay" element={<Pay />} />
      {/*    <Route path="/admin" element={<Admin />} /> */}
         <Route path="/admin2" element={<Admin2 />} />
         <Route path="/customsize" element={<CustomSize />} />

@@ -1,9 +1,8 @@
 import React from "react";
-import SwiperPay from "../component/SwiperPay/SwpierPay";
+import SwiperPay from "../SwiperPay/SwpierPay";
 import CircleIcon from "@mui/icons-material/Circle";
 import { Button } from "@mui/material";
-import QA from "../component/Q&A/Q&A";
-import Online from "../component/Online/Online";
+
 
 export default function Pay() {
   const handleClick = () => {
@@ -145,7 +144,6 @@ export default function Pay() {
           </div>
         </div>
       </div>
-   
     </div>
   );
 }

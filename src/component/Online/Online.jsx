@@ -1,7 +1,8 @@
 import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { Box, Tab } from "@mui/material";
 import React from "react";
-import Pay from "../../page/Pay";
+import Pay from "../Pay/Pay";
+import Address from "../Address/Address";
 
 function Online() {
   const [value, setValue] = React.useState(0);
@@ -40,7 +41,11 @@ function Online() {
             <TabList
               onChange={handleChange}
               aria-label="lab API tabs example"
-              sx={{ width: "100%" }}
+              sx={{
+                width: "100%",
+                display: "flex",
+                justifyContent: "space-between",
+              }}
             >
               <Tab label="ثبت‌نام آنلاین دریافت وام" value="1" />
               <Tab label=" ثبت‌نام حضوری" value="2" />
@@ -61,7 +66,7 @@ function Online() {
                     className="h-[24px] w-[24px] object-cover"
                   />
                 </div>
-                <p className="text-[#2c3544] md:text-[12px] text-[14px] font-bold">
+                <p className="text-[#2c3544] text-[14px] font-bold">
                   {" "}
                   ثبت‌نام آسان{" "}
                 </p>
@@ -74,7 +79,7 @@ function Online() {
                     className="h-[24px] w-[24px] object-cover"
                   />
                 </div>
-                <p className="text-[#2c3544] md:text-[12px] text-[14px] font-bold">
+                <p className="text-[#2c3544] text-[14px] font-bold">
                   {" "}
                   اعتبار سنجی بسیار سریع{" "}
                 </p>
@@ -87,7 +92,7 @@ function Online() {
                     className="h-[24px] w-[24px] object-cover"
                   />
                 </div>
-                <p className="text-[#2c3544] md:text-[12px] text-[14px] font-bold">
+                <p className="text-[#2c3544] text-[14px] font-bold">
                   {" "}
                   دریافت وام بدون نیاز به ضامن{" "}
                 </p>
@@ -95,7 +100,9 @@ function Online() {
             </div>
             <Pay />
           </TabPanel>
-          <TabPanel value="2">hij2</TabPanel>
+          <TabPanel value="2">
+            <Address/>
+          </TabPanel>
         </TabContext>
       </Box>
     </div>
