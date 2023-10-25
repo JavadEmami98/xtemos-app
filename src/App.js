@@ -17,7 +17,7 @@ import Step4 from "./page/Step4";
 import Step5 from "./page/Step5";
 import Step51 from "./page/Step51";
 import Payment from "./page/Payment";
-
+import Admin from "./page/Admin";
 
 function App() {
   return (
@@ -31,7 +31,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/loginpassword" element={<LoginPassword />} />
         <Route path="/contactus" element={<ContactUs />} />
-     {/*    <Route path="/admin" element={<Admin />} /> */}
+        <Route path="/admin" element={<Admin />} />
         <Route path="/admin2" element={<Admin2 />} />
         <Route path="/customsize" element={<CustomSize />} />
         <Route path="/step1" element={<Step1 />} />

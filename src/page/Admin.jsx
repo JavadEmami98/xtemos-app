@@ -1,4 +1,4 @@
-/* import { Box, Typography, TextField, Button } from "@mui/material";
+import { Box, Typography, TextField, Button } from "@mui/material";
 import Tab from "@mui/material/Tab";
 import TabContext from "@mui/lab/TabContext";
 import LaptopIcon from "@mui/icons-material/Laptop";
@@ -17,11 +17,11 @@ import SecurityIcon from "@mui/icons-material/Security";
 import InputIcon from "@mui/icons-material/Input";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
 import React, { useState } from "react";
-import { Email } from "@mui/icons-material";
+/* import { Email } from "@mui/icons-material"; */
 
 function Admin() {
   const [value, setValue] = React.useState("1");
-    const [entredUsername, setEntredUsername] = useState("");
+  const [entredUsername, setEntredUsername] = useState("");
   const [inputValue, setInputValue] = useState("");
   const [formData, setFormData] = useState({
     name: "",
@@ -190,12 +190,12 @@ function Admin() {
                                 className="w-full"
                               />
 
-                                <Skeleton
+                              {/*   <Skeleton
                                 variant="rounded"
                                 width={200}
                                 height={53}
                                 animation="wave"
-                              />
+                              /> */}
                               <IconButton
                                 sx={{
                                   display: "flex",
@@ -290,7 +290,7 @@ function Admin() {
                               ورود با رمز عبور یک بار مصرف
                             </div>
                             <TextField
-                                value={inputValue}
+                              value={inputValue}
                               onChange={handleInputChange}
                               id="outlined-basic"
                               label="تلفن همراه"
@@ -303,7 +303,7 @@ function Admin() {
                             />
                             <div className="flex gap-2 justify-between mt-[20px] px-[12px] w-full">
                               <Button
-                                   disabled={inputValue.length <= 9}
+                                disabled={inputValue.length <= 9}
                                 type="tel"
                                 variant="contained"
                                 sx={{
@@ -426,4 +426,3 @@ function Admin() {
 }
 
 export default Admin;
- */
