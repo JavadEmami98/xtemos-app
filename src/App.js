@@ -18,8 +18,11 @@ import Step5 from "./page/Step5";
 import Step51 from "./page/Step51";
 import Payment from "./page/Payment";
 import Admin from "./page/Admin";
+import Okala from "./page/Okala";
+
 
 function App() {
+  
   return (
     <BrowserRouter>
       <Routes>
@@ -41,6 +44,7 @@ function App() {
         <Route path="/step5" element={<Step5 />} />
         <Route path="/step51" element={<Step51 />} />
         <Route path="/payment" element={<Payment />} />
+        <Route path="/okala" element={<Okala />} />
       </Routes>
     </BrowserRouter>
   );

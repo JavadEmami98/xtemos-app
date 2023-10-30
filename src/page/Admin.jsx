@@ -16,13 +16,14 @@ import CardMembershipIcon from "@mui/icons-material/CardMembership";
 import SecurityIcon from "@mui/icons-material/Security";
 import InputIcon from "@mui/icons-material/Input";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import React, { useState } from "react";
-/* import { Email } from "@mui/icons-material"; */
+import React, { useEffect, useState } from "react";
+import Register from "../component/Register/Register";
 
 function Admin() {
   const [value, setValue] = React.useState("1");
   const [entredUsername, setEntredUsername] = useState("");
-  const [inputValue, setInputValue] = useState("");
+
+
   const [formData, setFormData] = useState({
     name: "",
     password: "",
@@ -34,16 +35,13 @@ function Admin() {
       ...prevState,
       [e.target.id]: e.target.value,
     }));
-    console.log(formData);
   };
 
   const addUserHandler = (event) => {
     event.preventDefault();
+    console.log(formData);
   };
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
   const usernameChangeHandler = (event) => {
     setEntredUsername(event.target.value);
   };
@@ -137,15 +135,13 @@ function Admin() {
                               sx={{ width: "100%" }}
                               variant="outlined"
                             >
-                              <InputLabel
-                                id="password"
-                                value={password}
-                                Onchange={Onchange}
-                                htmlFor="outlined-adornment-password"
-                              >
+                              <InputLabel htmlFor="outlined-adornment-password">
                                 رمز عبور
                               </InputLabel>
                               <OutlinedInput
+                                id="password"
+                                value={password}
+                                onChange={Onchange}
                                 type={showPassword ? "text" : "password"}
                                 endAdornment={
                                   <InputAdornment position="end">
@@ -163,7 +159,7 @@ function Admin() {
                                     </IconButton>
                                   </InputAdornment>
                                 }
-                                label="Password"
+                                label="رمز عبور"
                               />
                             </FormControl>
                             <TextField
@@ -262,8 +258,6 @@ function Admin() {
                                 </Typography>
                               </Box>
                             </Box>
-                            <div></div>
-
                             <Box sx={{ my: "3.25px", width: "100%" }}>
                               <Button
                                 onClick={addUserHandler}
@@ -284,49 +278,11 @@ function Admin() {
                             </Box>
                           </div>
                         </TabPanel>
+
                         <TabPanel value="2">
-                          <div className="px-4">
-                            <div className="px-[15px] text-[20px] mt-[20px] text-center font-bold">
-                              ورود با رمز عبور یک بار مصرف
-                            </div>
-                            <TextField
-                              value={inputValue}
-                              onChange={handleInputChange}
-                              id="outlined-basic"
-                              label="تلفن همراه"
-                              variant="outlined"
-                              type="tel"
-                              sx={{
-                                width: "100%",
-                                mt: "24px",
-                              }}
-                            />
-                            <div className="flex gap-2 justify-between mt-[20px] px-[12px] w-full">
-                              <Button
-                                disabled={inputValue.length <= 9}
-                                type="tel"
-                                variant="contained"
-                                sx={{
-                                  fontSize: "16px",
-                                  minWidth: "64px !important",
-                                  width: "100%",
-                                }}
-                              >
-                                ثبت
-                              </Button>
-                              <Button
-                                variant="outlined"
-                                sx={{
-                                  fontSize: "16px",
-                                  minWidth: "64px !important",
-                                  width: "100%",
-                                }}
-                              >
-                                بازگشت
-                              </Button>
-                            </div>
-                          </div>
+                          <Register />
                         </TabPanel>
+
                         <TabPanel value="3">
                           <div className="my-auto  mx-auto  mt-2 px-2">
                             <h1 className="text-[21px] mb-[24px] text-center font-bold">
