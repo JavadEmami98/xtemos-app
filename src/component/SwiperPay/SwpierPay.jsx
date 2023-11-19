@@ -48,7 +48,7 @@ export default function SwiperPay() {
             backgroundColor: "#fff",
             overflow: "hidden",
             width: "100%",
-            height:"79px"
+            height: "79px",
           }}
           /*   slidesPerView={3} */
           centeredSlides={true}
@@ -134,13 +134,13 @@ export default function SwiperPay() {
               <p className="text-[12px] mr-[5px]">ریال</p>
             </div>
           </SwiperSlide>
-          <div className="absolute flex justify-center items-center h-full  w-[80px] top-auto left-0 bg-[#fff] cursor-pointer  z-10">
-            <div className="absolute flex justify-center items-center h-[60px] w-[30px] top-auto left-2  rounded-[8px] bg-[#4E8AFF] opacity-[40%]  cursor-pointer button-next-slide z-10 ">
+          <div className="absolute flex justify-center items-center h-full  w-[35px] top-auto left-0 bg-[#fff] cursor-pointer  z-10">
+            <div className="absolute flex justify-center items-center h-[60px] w-[30px] top-auto left-2  rounded-[8px] bg-[rgb(78,138,255,0.3)]  cursor-pointer button-next-slide z-10 ">
               <NavigateBeforeIcon />
             </div>
           </div>
-          <div className="absolute flex justify-center items-center h-full  w-[80px] top-auto right-0 bg-[#fff] cursor-pointer  z-10">
-            <div className="absolute flex justify-center items-center h-[60px] w-[30px] top-auto right-2  rounded-[8px] bg-[#4E8AFF] opacity-[40%] cursor-pointer button-prev-slide z-10 ">
+          <div className="absolute flex justify-center items-center h-full  w-[35px] top-auto right-0 bg-[#fff] cursor-pointer  z-10">
+            <div className="absolute flex justify-center items-center h-[60px] w-[30px] top-auto right-2  rounded-[8px] bg-[rgb(78,138,255,0.3)]  cursor-pointer button-prev-slide z-10 ">
               <NavigateNextIcon
                 sx={{ opacity: 1, color: "black !important" }}
               />

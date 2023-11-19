@@ -54,7 +54,10 @@ export default function Pay() {
         </div>
       </div>
       {/* part 2 */}
-      <div className="flex mb-[15px] items-center justify-between px-[80px] rounded-[15px] relative bg-[#D9D9D9] w-full h-[52px]">
+      <Box
+        sx={{ boxShadow: "0px 10px 10px rgba(0,0,0,0.2)" }}
+        className="flex mb-[25px] items-center justify-between px-[80px] rounded-[15px] relative bg-[#D9D9D9] w-full h-[52px]"
+      >
         <div className="flex items-center justify-center w-[36px] h-[36px] absolute top-2 right-[-13px] border-[1.5px] rounded-[10px] text-[#fff] text-[16px] border-[#FFFFFF] bg-[#B1B1B1]">
           1
         </div>
@@ -63,7 +66,7 @@ export default function Pay() {
         </div>
         <p className="text-[18px] font-bold text-[#fff]"> تکمیل مشخصات</p>
         <p className="text-[18px] font-bold text-[#fff]">امید کوشا </p>
-      </div>
+      </Box>
       <div className="flex items-center pr-[80px] rounded-[15px] relative bg-[#4E8AFF] w-full h-[52px]">
         <div className="flex items-center justify-center w-[36px] h-[36px] absolute top-2 right-[-13px] border-[1.5px] rounded-[10px] text-[#fff] text-[16px] border-[#FFFFFF] bg-[#1B3AAD]">
           2
@@ -81,22 +84,18 @@ export default function Pay() {
             </h2>
             <div className="bg-[#fff] rounded-[15px] p-8 mt-2">
               <SwiperPay />
-              <div className="flex items-center justify-around mt-[35px]">
-                <div className="flex items-center justify-center lg:px-[24px] md:px-[24px] px-[16px] lg:py-[13px] md:py-[13px] py-[8px] border-[1px] border-[#B1B1B1] bg-[#4E8AFF] rounded-[7px] lg:text-[14px] md:text-[14px] text-[12px] text-[#fff] font-semibold cursor-pointer">
-                  {" "}
-                  6 قسط{" "}
+              <div className="grid grid-cols-4 lg:gap-10 md:gap-7 gap-4 mt-[35px]">
+                <div className="flex items-center justify-center lg:px-[18px] md:px-[18px] px-[8px] lg:py-[13px] md:py-[13px] py-[8px] border-[1px] border-[#B1B1B1] bg-[#4E8AFF] rounded-[7px] lg:text-[14px] md:text-[14px] text-[10px] text-[#fff] font-semibold cursor-pointer">
+                  6 قسط
                 </div>
-                <div className="flex items-center justify-center lg:px-[24px] md:px-[24px] px-[16px] lg:py-[13px] md:py-[13px] py-[8px] border-[1px] border-[#6e798d]  rounded-[7px] lg:text-[14px] md:text-[14px] text-[12px] text-[#6e798d] font-semibold cursor-pointer">
-                  {" "}
-                  12 قسط{" "}
+                <div className="flex items-center justify-center lg:px-[18px] md:px-[18px] px-[8px] lg:py-[13px] md:py-[13px] py-[8px] border-[1px] border-[#6e798d]  rounded-[7px] lg:text-[14px] md:text-[14px] text-[10px] text-[#6e798d] font-semibold cursor-pointer">
+                  12 قسط
                 </div>
-                <div className="flex items-center justify-center lg:px-[24px] md:px-[24px] px-[16px] lg:py-[13px] md:py-[13px] py-[8px] border-[1px] border-[#dee3e7]  rounded-[7px] lg:text-[14px] md:text-[14px] text-[12px] text-[#dee3e7] font-semibold cursor-pointer">
-                  {" "}
-                  24 قسط{" "}
+                <div className="flex items-center justify-center lg:px-[18px] md:px-[18px] px-[8px] lg:py-[13px] md:py-[13px] py-[8px] border-[1px] border-[#dee3e7]  rounded-[7px] lg:text-[14px] md:text-[14px] text-[10px] text-[#dee3e7] font-semibold cursor-pointer">
+                  24 قسط
                 </div>
-                <div className="flex items-center justify-center lg:px-[24px] md:px-[24px] px-[16px] lg:py-[13px] md:py-[13px] py-[8px] border-[1px] border-[#dee3e7] rounded-[7px] lg:text-[14px] md:text-[14px] text-[12px] text-[#dee3e7] font-semibold cursor-pointer">
-                  {" "}
-                  36 قسط{" "}
+                <div className="flex items-center justify-center lg:px-[18px] md:px-[18px] px-[8px] lg:py-[13px] md:py-[13px] py-[8px] border-[1px] border-[#dee3e7] rounded-[7px] lg:text-[14px] md:text-[14px] text-[10px] text-[#dee3e7] font-semibold cursor-pointer">
+                  36 قسط
                 </div>
               </div>
             </div>
@@ -108,17 +107,17 @@ export default function Pay() {
       >
         <div className="lg:px-[215px] px-3 mt-[30px]">
           <p className="text-[15px] font-bold text-[#000000] mr-[25px]">
-            جـزئیات{" "}
+            جـزئیات
           </p>
           <div className="flex flex-col py-[25px] px-[50px] bg-[#F6F6F6] rounded-[15px] mt-3">
-            <div className="flex justify-around items-center  py-[15px] bg-[#fff] rounded-[10px] border border-[#EEEEEE]">
+            <div className="flex justify-between px-[75px] items-center py-[15px] bg-[#fff] rounded-[10px] border border-[#EEEEEE]">
               <img src="assests/images/planLoan/bank-saman.svg" alt="" />
               <div className="flex flex-col gap-1">
                 <p className="text-[10px] text-[#646464] font-medium">
                   تامین کننده
                 </p>
                 <p className="text-[8px] text-[#4E8AFF] font-normal">
-                  بانک سامان{" "}
+                  بانک سامان
                 </p>
               </div>
             </div>
@@ -129,17 +128,15 @@ export default function Pay() {
                     مبلغ هر قسط
                   </p>
                   <p className="text-[8px] text-[#000000] font-normal">
-                    {" "}
-                    (بدون احتساب هزینه عملیات){" "}
+                    (بدون احتساب هزینه عملیات)
                   </p>
                 </div>
                 <div className="flex items-center gap-4">
                   <p className="text-[12px] text-[#646464] font-medium">
-                    3,372,936{" "}
+                    3,372,936
                   </p>
                   <p className="text-[10px] text-[#646464] font-normal">
-                    {" "}
-                    تومان{" "}
+                    تومان
                   </p>
                 </div>
               </div>
@@ -275,9 +272,12 @@ export default function Pay() {
         </div>
       </Box>
 
-      {/* PArt 3*/}
+      {/* Part 3*/}
       <div className="mt-[30px]">
-        <div className="relative flex items-center pr-[80px] rounded-[15px]  bg-[#4E8AFF] w-full h-[52px] z-100">
+        <Box
+          sx={{ boxShadow: "0px 10px 10px rgba(0,0,0,0.2)" }}
+          className="relative  flex items-center pr-[80px] rounded-[15px]  bg-[#4E8AFF] w-full h-[52px] z-100"
+        >
           <div className="flex items-center justify-center w-[36px] h-[36px] absolute top-2 right-[-13px] border-[1.5px] rounded-[10px] text-[#fff] text-[16px] border-[#FFFFFF] bg-[#1B3AAD]">
             3
           </div>
@@ -287,7 +287,7 @@ export default function Pay() {
           <p className="text-[18px] font-bold text-[#fff]">
             پرداخت و دریافت مدارک
           </p>
-        </div>
+        </Box>
         <div className="lg:flex md:flex justify-around p-[70px] items-center">
           <div className="flex flex-col gap-3">
             <p className="text-[15px] font-semibold text-[#000000]">
