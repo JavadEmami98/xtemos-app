@@ -16,7 +16,7 @@ const list = [
   {
     title: "   گوشیت رو راحت ",
     paragraph: " عوض کن",
-    image: "url('/images/back.jpg')",
+    image: "https://cdn.okala.com/Media/Index_v2/Slider/500459",
     descripttion1:
       "قبلی پرچمداران این شرکت شاهد نبودیم. تنها در نمای رو به رویی این بار اپل از ناچ ",
     descripttion2:
@@ -24,7 +24,7 @@ const list = [
   },
   {
     title: "خرید اپل واچ الترا",
-    image: "url('/images/back.jpg')",
+    image: "https://cdn.okala.com/Media/Index_v2/Slider/500459",
     descripttion1:
       "قبلی پرچمداران این شرکت شاهد نبودیم. تنها در نمای رو به رویی این بار اپل از ناچ ",
     descripttion2:

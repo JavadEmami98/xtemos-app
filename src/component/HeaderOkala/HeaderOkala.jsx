@@ -5,6 +5,7 @@ import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDown
 import AccountCircleOutlinedIcon from '@mui/icons-material/AccountCircleOutlined';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import HamMenu from "../HamMenu/HamMenu";
+import LocationDialog from "../LocationDialog/LocationDialog";
 
 function HeaderOkala() {
   return (
@@ -19,15 +20,10 @@ function HeaderOkala() {
                 </div>
                 
         </div>
-        <div className="flex items-center px-[6px] py-[8px] mr-[40px] rounded-[10px] cursor-pointer hover:bg-[#f8f8f8]">
-                <FmdGoodOutlinedIcon sx={{mr:"8px",width:"20px",height:"20px"}}/>
-                <span className="text-sm text-[#545454]">مشهد، </span>
-                <span  className="text-sm text-[#545454]">سید رضی 46 پلاک ۳۱۳ </span>
-                <KeyboardArrowDownOutlinedIcon sx={{width:"20px",height:"20px",mr:"4px"}}/>
-        </div>
+     <LocationDialog/>
         <div>
             <div className="flex items-center">
-               <div className="flex items-center px-[8px] py-[11px] ml-2 cursor-pointer rounded-[10px] hover:bg-[#f8f8f8]">
+               <div className="flex items-center px-[8px] py-[12.5px] ml-2 cursor-pointer rounded-[10px] hover:bg-[#f8f8f8]">
                  <AccountCircleOutlinedIcon/>
                 <p className="text-sm font-medium text-grey-800 pr-2 whitespace-nowrap">پروفایل</p>
                 <KeyboardArrowDownOutlinedIcon sx={{width:"20px",height:"20px",ml:"4px"}}/>
