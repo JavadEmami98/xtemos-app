@@ -1,5 +1,5 @@
 import React from "react";
-import Swiper1 from "../component/Swiper1/Swiper1";
+/* import Swiper1 from "../component/Swiper1/Swiper1"; */
 import Swiper2 from "../component/Swiepr2/Swiper2";
 import Part1 from "../component/Part1/Part1";
 import CustomTab from "../component/Tab/Tab";

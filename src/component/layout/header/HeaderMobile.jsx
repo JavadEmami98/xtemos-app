@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import HamMenu from "./HamMenu";
 import { Button, Drawer } from "@mui/material";
-import React, { Fragment, useEffect, useState } from "react";
+import React, { Fragment } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import Badge from "@mui/material/Badge";
 import ShoppingCartOutlinedIcon from "@mui/icons-material/ShoppingCartOutlined";

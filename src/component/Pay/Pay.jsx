@@ -8,38 +8,10 @@ export default function Pay() {
     <div className="container">
       {/* part 1  */}
       <div>
-        <div className="lg:flex md:flex  p-[30px] items-end">
+        <div className="lg:flex md:flex  p-[30px] items-center">
           <img src="assests/images/planLoan/part1.svg" alt="" />
-          <div className="flex flex-col gap-3 lg:mb-[50px] md:mb-[50px]">
-            <div className="flex gap-5 mt-[10px]">
-              <Button
-                variant="contained"
-                sx={{
-                  width: "143px",
-                  height: "42px",
-                  background: "#4E8AFF",
-                  borderRadius: "7px",
-                  fontSize: "12px",
-                  ":hover": { background: "#4E8AFF" },
-                }}
-              >
-                شروع ثبت نام
-              </Button>
-              <Button
-                variant="outlined"
-                sx={{
-                  /*   width: "113px", */
-                  height: "42px",
-                  background: "#fff",
-                  color: "#4E8AFF",
-                  borderRadius: "7px",
-                  fontSize: "12px",
-                  ":hover": { background: "#fff" },
-                }}
-              >
-                راهنمای ثبت نام
-              </Button>
-            </div>
+          <div className="flex flex-col gap-3  items-center">
+            <p>سلام</p>
             <p className="text-[25px] font-semibold text-[#000000]">
               مـراحل ثبـت نـام وام زیتـرو
             </p>

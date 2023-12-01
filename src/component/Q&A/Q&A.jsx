@@ -39,7 +39,6 @@ function QA() {
               }}
               className={`details ${isVisible ? "visible" : "hidden"}`}
             >
-          
               <span>
                 افراد بین ۱۸ تا ۷۰ سال در صورت داشتن شرایط زیر می‌­توانند با طی
                 مسیر تخصیص اعتبار، این تسهیلات را دریافت کنند:
@@ -486,7 +485,9 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px] pl-[27px] leading-6">چکم را چطور پر کنم؟</span>
+              <span className="py-[27px] pl-[27px] leading-6">
+                چکم را چطور پر کنم؟
+              </span>
               <AddCircleOutlinedIcon
                 onClick={toggleDetails}
                 sx={{ color: "#424c5c" }}
@@ -996,7 +997,9 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px] pl-[27px] leading-6">اقساطم چه زمانی صادر می‌­شوند؟</span>
+              <span className="py-[27px] pl-[27px] leading-6">
+                اقساطم چه زمانی صادر می‌­شوند؟
+              </span>
               <AddCircleOutlinedIcon
                 onClick={toggleDetails}
                 sx={{ color: "#424c5c" }}
@@ -1052,7 +1055,9 @@ function QA() {
           </li>
           <li className="flex flex-col px-[32px]  bg-[#f2f5f8] rounded-[1.5rem] ">
             <div className="flex justify-between items-center text-[14px] cursor-pointer text-[#061962] font-medium ">
-              <span className="py-[27px] pl-[27px] leading-6">چطور اقساطم را پرداخت کنم؟</span>
+              <span className="py-[27px] pl-[27px] leading-6">
+                چطور اقساطم را پرداخت کنم؟
+              </span>
               <AddCircleOutlinedIcon
                 onClick={toggleDetails}
                 sx={{ color: "#424c5c" }}

@@ -16,13 +16,12 @@ import CardMembershipIcon from "@mui/icons-material/CardMembership";
 import SecurityIcon from "@mui/icons-material/Security";
 import InputIcon from "@mui/icons-material/Input";
 import SupportAgentIcon from "@mui/icons-material/SupportAgent";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Register from "../component/Register/Register";
 
 function Admin() {
   const [value, setValue] = React.useState("1");
   const [entredUsername, setEntredUsername] = useState("");
-
 
   const [formData, setFormData] = useState({
     name: "",
